@@ -3986,7 +3986,7 @@
       </fields>
     </peripheral>
     <peripheral>
-      <name>BKP</name>
+      <name>RTC</name>
       <baseAddress>0x40002800</baseAddress>
       <register>
         <name>TR</name>
@@ -4996,7 +4996,7 @@
       </fields>
     </peripheral>
     <peripheral>
-      <name>RTC</name>
+      <name>BKP</name>
       <baseAddress>0x40002800</baseAddress>
       <register>
         <name>TR</name>

@@ -36208,7 +36208,7 @@
         </field>
       </fields>
       <register>
-        <name>DINRx=96,64,32,0</name>
+        <name>DINR</name>
         <addressOffset>0x8</addressOffset>
         <size>0x20</size>
       </register>
@@ -36220,7 +36220,7 @@
         </field>
       </fields>
       <register>
-        <name>DOUTRx=96,64,32,0</name>
+        <name>DOUTR</name>
         <addressOffset>0xc</addressOffset>
         <size>0x20</size>
       </register>

@@ -290,7 +290,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -347,7 +347,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -384,7 +384,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2OutputComparemode</name>
+        <name>CCMR2_OUT</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -441,7 +441,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2InputCapturemode</name>
+        <name>CCMR2_IN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -919,7 +919,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -976,7 +976,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -1013,7 +1013,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2OutputComparemode</name>
+        <name>CCMR2_OUT</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -1070,7 +1070,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2InputCapturemode</name>
+        <name>CCMR2_IN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -1548,7 +1548,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -1605,7 +1605,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -1642,7 +1642,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2OutputComparemode</name>
+        <name>CCMR2_OUT</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -1699,7 +1699,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2InputCapturemode</name>
+        <name>CCMR2_IN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -2177,7 +2177,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -2234,7 +2234,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -2271,7 +2271,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2OutputComparemode</name>
+        <name>CCMR2_OUT</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -2328,7 +2328,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2InputCapturemode</name>
+        <name>CCMR2_IN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -2941,7 +2941,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -2988,7 +2988,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -7077,6 +7077,11 @@
           <bitWidth>1</bitWidth>
         </field>
         <field>
+          <name>s</name>
+          <bitOffset>5</bitOffset>
+          <bitWidth>3</bitWidth>
+        </field>
+        <field>
           <name>TIM13_REMAP</name>
           <bitOffset>8</bitOffset>
           <bitWidth>1</bitWidth>
@@ -7692,22 +7697,22 @@
       </register>
       <fields>
         <field>
-          <name>SQ13</name>
+          <name>SQ13conversioningularsequencebits</name>
           <bitOffset>0</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ14</name>
+          <name>SQ14conversioningularsequencebits</name>
           <bitOffset>5</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ15</name>
+          <name>SQ15conversioningularsequencebits</name>
           <bitOffset>10</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ16</name>
+          <name>SQ16conversioningularsequencebits</name>
           <bitOffset>15</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
@@ -7724,32 +7729,32 @@
       </register>
       <fields>
         <field>
-          <name>SQ7</name>
+          <name>SQ7conversioningularsequencebits</name>
           <bitOffset>0</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ8</name>
+          <name>SQ8conversioningularsequencebits</name>
           <bitOffset>5</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ9</name>
+          <name>SQ9conversioningularsequencebits</name>
           <bitOffset>10</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ10</name>
+          <name>SQ10conversioningularsequencebits</name>
           <bitOffset>15</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ11</name>
+          <name>SQ11conversioningularsequencebits</name>
           <bitOffset>20</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ12</name>
+          <name>SQ12conversioningularsequencebits</name>
           <bitOffset>25</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
@@ -7761,32 +7766,32 @@
       </register>
       <fields>
         <field>
-          <name>SQ1</name>
+          <name>SQ1conversioningularsequencebits</name>
           <bitOffset>0</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ2</name>
+          <name>SQ2conversioningularsequencebits</name>
           <bitOffset>5</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ3</name>
+          <name>SQ3conversioningularsequencebits</name>
           <bitOffset>10</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ4</name>
+          <name>SQ4conversioningularsequencebits</name>
           <bitOffset>15</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ5</name>
+          <name>SQ5conversioningularsequencebits</name>
           <bitOffset>20</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ6</name>
+          <name>SQ6conversioningularsequencebits</name>
           <bitOffset>25</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
@@ -7878,7 +7883,7 @@
       </register>
       <fields>
         <field>
-          <name>DATA</name>
+          <name>gularDATA</name>
           <bitOffset>0</bitOffset>
           <bitWidth>16</bitWidth>
         </field>
@@ -8240,7 +8245,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -8297,7 +8302,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -8334,7 +8339,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2OutputComparemode</name>
+        <name>CCMR2_OUT</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -8391,7 +8396,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2InputCapturemode</name>
+        <name>CCMR2_IN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -9439,7 +9444,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -9486,7 +9491,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -9902,7 +9907,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -9929,7 +9934,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -10303,7 +10308,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -10330,7 +10335,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>

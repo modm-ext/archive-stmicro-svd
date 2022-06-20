@@ -18301,6 +18301,124 @@
       </register>
     </peripheral>
     <peripheral>
+      <name>OPAMP</name>
+      <baseAddress>0x40010300</baseAddress>
+      <register>
+        <name>CSR</name>
+        <addressOffset>0x0</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>OPAMPxEN</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>FORCEVP</name>
+            <bitOffset>1</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>VPSEL</name>
+            <bitOffset>2</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>USERTRIM</name>
+            <bitOffset>4</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>VMSEL</name>
+            <bitOffset>5</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>HIGHSPEEDEN</name>
+            <bitOffset>7</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>OPAMPINTEN</name>
+            <bitOffset>8</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CALON</name>
+            <bitOffset>11</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CALSEL</name>
+            <bitOffset>12</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>PGGAIN</name>
+            <bitOffset>14</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+          <field>
+            <name>TRIMOFFSETP</name>
+            <bitOffset>19</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+          <field>
+            <name>TRIMOFFSETN</name>
+            <bitOffset>24</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+          <field>
+            <name>OUTCAL</name>
+            <bitOffset>30</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>LOCK</name>
+            <bitOffset>31</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>TCMR</name>
+        <addressOffset>0x18</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>VMSSEL</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>VPSSEL</name>
+            <bitOffset>1</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>T1CMEN</name>
+            <bitOffset>3</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>T8CMEN</name>
+            <bitOffset>4</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>T20CMEN</name>
+            <bitOffset>5</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>LOCK</name>
+            <bitOffset>31</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+        </fields>
+      </register>
+    </peripheral>
+    <peripheral>
       <name>OPAMP1</name>
       <baseAddress>0x40010300</baseAddress>
       <register>
@@ -31832,6 +31950,11 @@
     <peripheral>
       <name>DMAMUX1</name>
       <baseAddress>0x40020800</baseAddress>
+      <register>
+        <name>CCR0</name>
+        <addressOffset>0x0</addressOffset>
+        <size>0x20</size>
+      </register>
       <register>
         <name>CCR1</name>
         <addressOffset>0x4</addressOffset>

@@ -3007,258 +3007,150 @@
       <name>TIM6</name>
       <baseAddress>0x40001000</baseAddress>
       <register>
-        <name>ISR</name>
+        <name>CR1</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
       <fields>
         <field>
-          <name>CMPM</name>
+          <name>CEN</name>
           <bitOffset>0</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>ARRM</name>
+          <name>UDIS</name>
           <bitOffset>1</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>EXTTRIG</name>
+          <name>URS</name>
           <bitOffset>2</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>CMPOK</name>
+          <name>OPM</name>
           <bitOffset>3</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>ARROK</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>UP</name>
-          <bitOffset>5</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>DOWN</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
           <name>s</name>
+          <bitOffset>4</bitOffset>
+          <bitWidth>28</bitWidth>
+        </field>
+        <field>
+          <name>ARPE</name>
           <bitOffset>7</bitOffset>
-          <bitWidth>25</bitWidth>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>UIFREMA</name>
+          <bitOffset>11</bitOffset>
+          <bitWidth>1</bitWidth>
         </field>
       </fields>
       <register>
-        <name>ICR</name>
+        <name>CR2</name>
         <addressOffset>0x4</addressOffset>
         <size>0x20</size>
       </register>
       <fields>
         <field>
-          <name>CMPMCF</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>ARRMCF</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>EXTTRIGCF</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>CMPOKCF</name>
-          <bitOffset>3</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>ARROKCF</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>UPCF</name>
-          <bitOffset>5</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>DOWNCF</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
           <name>s</name>
-          <bitOffset>7</bitOffset>
-          <bitWidth>25</bitWidth>
+          <bitOffset>0</bitOffset>
+          <bitWidth>32</bitWidth>
+        </field>
+        <field>
+          <name>MMS</name>
+          <bitOffset>4</bitOffset>
+          <bitWidth>3</bitWidth>
         </field>
       </fields>
       <register>
-        <name>IER</name>
-        <addressOffset>0x8</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>CMPMIE</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>ARRMIE</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>EXTTRIGIE</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>CMPOKIE</name>
-          <bitOffset>3</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>ARROKIE</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>UPIE</name>
-          <bitOffset>5</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>DOWNIE</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>s</name>
-          <bitOffset>7</bitOffset>
-          <bitWidth>25</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>CFGR</name>
+        <name>DIER</name>
         <addressOffset>0xc</addressOffset>
         <size>0x20</size>
       </register>
       <fields>
         <field>
-          <name>CKSEL</name>
+          <name>UIE</name>
           <bitOffset>0</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>CKPOL</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>CKFLT</name>
-          <bitOffset>3</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
           <name>s</name>
-          <bitOffset>5</bitOffset>
-          <bitWidth>27</bitWidth>
+          <bitOffset>1</bitOffset>
+          <bitWidth>31</bitWidth>
         </field>
         <field>
-          <name>TRGFLT</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PRESC</name>
-          <bitOffset>9</bitOffset>
-          <bitWidth>3</bitWidth>
-        </field>
-        <field>
-          <name>TRIGSEL</name>
-          <bitOffset>13</bitOffset>
-          <bitWidth>3</bitWidth>
-        </field>
-        <field>
-          <name>TRIGEN</name>
-          <bitOffset>17</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>TIMOUT</name>
-          <bitOffset>19</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>WAVE</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>WAVEPOL</name>
-          <bitOffset>21</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>PRELOAD</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>COUNTMODE</name>
-          <bitOffset>23</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>ENC</name>
-          <bitOffset>24</bitOffset>
+          <name>UDE</name>
+          <bitOffset>8</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
       </fields>
       <register>
-        <name>CR</name>
+        <name>SR</name>
         <addressOffset>0x10</addressOffset>
         <size>0x20</size>
       </register>
       <fields>
         <field>
-          <name>ENABLE</name>
+          <name>UIF</name>
           <bitOffset>0</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>SNGSTRT</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>CNTSTRT</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
           <name>s</name>
-          <bitOffset>3</bitOffset>
-          <bitWidth>29</bitWidth>
+          <bitOffset>1</bitOffset>
+          <bitWidth>31</bitWidth>
         </field>
       </fields>
       <register>
-        <name>CMP</name>
+        <name>EGR</name>
         <addressOffset>0x14</addressOffset>
         <size>0x20</size>
       </register>
       <fields>
         <field>
-          <name>CMP</name>
+          <name>UG</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>1</bitOffset>
+          <bitWidth>31</bitWidth>
+        </field>
+      </fields>
+      <register>
+        <name>CNT</name>
+        <addressOffset>0x24</addressOffset>
+        <size>0x20</size>
+      </register>
+      <fields>
+        <field>
+          <name>CNT</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>16</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>16</bitOffset>
+          <bitWidth>15</bitWidth>
+        </field>
+        <field>
+          <name>UIFCPYs</name>
+          <bitOffset>31</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+      </fields>
+      <register>
+        <name>PSC</name>
+        <addressOffset>0x28</addressOffset>
+        <size>0x20</size>
+      </register>
+      <fields>
+        <field>
+          <name>PSC</name>
           <bitOffset>0</bitOffset>
           <bitWidth>16</bitWidth>
         </field>
@@ -3270,7 +3162,7 @@
       </fields>
       <register>
         <name>ARR</name>
-        <addressOffset>0x18</addressOffset>
+        <addressOffset>0x2c</addressOffset>
         <size>0x20</size>
       </register>
       <fields>
@@ -3283,45 +3175,6 @@
           <name>s</name>
           <bitOffset>16</bitOffset>
           <bitWidth>16</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>CNT</name>
-        <addressOffset>0x1c</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>CNT</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>16</bitWidth>
-        </field>
-        <field>
-          <name>s</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>16</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>OR</name>
-        <addressOffset>0x20</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>OR_0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>OR_1</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>s</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>30</bitWidth>
         </field>
       </fields>
     </peripheral>
@@ -3329,258 +3182,150 @@
       <name>TIM7</name>
       <baseAddress>0x40001400</baseAddress>
       <register>
-        <name>ISR</name>
+        <name>CR1</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
       <fields>
         <field>
-          <name>CMPM</name>
+          <name>CEN</name>
           <bitOffset>0</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>ARRM</name>
+          <name>UDIS</name>
           <bitOffset>1</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>EXTTRIG</name>
+          <name>URS</name>
           <bitOffset>2</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>CMPOK</name>
+          <name>OPM</name>
           <bitOffset>3</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>ARROK</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>UP</name>
-          <bitOffset>5</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>DOWN</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
           <name>s</name>
+          <bitOffset>4</bitOffset>
+          <bitWidth>28</bitWidth>
+        </field>
+        <field>
+          <name>ARPE</name>
           <bitOffset>7</bitOffset>
-          <bitWidth>25</bitWidth>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>UIFREMA</name>
+          <bitOffset>11</bitOffset>
+          <bitWidth>1</bitWidth>
         </field>
       </fields>
       <register>
-        <name>ICR</name>
+        <name>CR2</name>
         <addressOffset>0x4</addressOffset>
         <size>0x20</size>
       </register>
       <fields>
         <field>
-          <name>CMPMCF</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>ARRMCF</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>EXTTRIGCF</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>CMPOKCF</name>
-          <bitOffset>3</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>ARROKCF</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>UPCF</name>
-          <bitOffset>5</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>DOWNCF</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
           <name>s</name>
-          <bitOffset>7</bitOffset>
-          <bitWidth>25</bitWidth>
+          <bitOffset>0</bitOffset>
+          <bitWidth>32</bitWidth>
+        </field>
+        <field>
+          <name>MMS</name>
+          <bitOffset>4</bitOffset>
+          <bitWidth>3</bitWidth>
         </field>
       </fields>
       <register>
-        <name>IER</name>
-        <addressOffset>0x8</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>CMPMIE</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>ARRMIE</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>EXTTRIGIE</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>CMPOKIE</name>
-          <bitOffset>3</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>ARROKIE</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>UPIE</name>
-          <bitOffset>5</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>DOWNIE</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>s</name>
-          <bitOffset>7</bitOffset>
-          <bitWidth>25</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>CFGR</name>
+        <name>DIER</name>
         <addressOffset>0xc</addressOffset>
         <size>0x20</size>
       </register>
       <fields>
         <field>
-          <name>CKSEL</name>
+          <name>UIE</name>
           <bitOffset>0</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>CKPOL</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>CKFLT</name>
-          <bitOffset>3</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
           <name>s</name>
-          <bitOffset>5</bitOffset>
-          <bitWidth>27</bitWidth>
+          <bitOffset>1</bitOffset>
+          <bitWidth>31</bitWidth>
         </field>
         <field>
-          <name>TRGFLT</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PRESC</name>
-          <bitOffset>9</bitOffset>
-          <bitWidth>3</bitWidth>
-        </field>
-        <field>
-          <name>TRIGSEL</name>
-          <bitOffset>13</bitOffset>
-          <bitWidth>3</bitWidth>
-        </field>
-        <field>
-          <name>TRIGEN</name>
-          <bitOffset>17</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>TIMOUT</name>
-          <bitOffset>19</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>WAVE</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>WAVEPOL</name>
-          <bitOffset>21</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>PRELOAD</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>COUNTMODE</name>
-          <bitOffset>23</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>ENC</name>
-          <bitOffset>24</bitOffset>
+          <name>UDE</name>
+          <bitOffset>8</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
       </fields>
       <register>
-        <name>CR</name>
+        <name>SR</name>
         <addressOffset>0x10</addressOffset>
         <size>0x20</size>
       </register>
       <fields>
         <field>
-          <name>ENABLE</name>
+          <name>UIF</name>
           <bitOffset>0</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>SNGSTRT</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>CNTSTRT</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
           <name>s</name>
-          <bitOffset>3</bitOffset>
-          <bitWidth>29</bitWidth>
+          <bitOffset>1</bitOffset>
+          <bitWidth>31</bitWidth>
         </field>
       </fields>
       <register>
-        <name>CMP</name>
+        <name>EGR</name>
         <addressOffset>0x14</addressOffset>
         <size>0x20</size>
       </register>
       <fields>
         <field>
-          <name>CMP</name>
+          <name>UG</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>1</bitOffset>
+          <bitWidth>31</bitWidth>
+        </field>
+      </fields>
+      <register>
+        <name>CNT</name>
+        <addressOffset>0x24</addressOffset>
+        <size>0x20</size>
+      </register>
+      <fields>
+        <field>
+          <name>CNT</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>16</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>16</bitOffset>
+          <bitWidth>15</bitWidth>
+        </field>
+        <field>
+          <name>UIFCPYs</name>
+          <bitOffset>31</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+      </fields>
+      <register>
+        <name>PSC</name>
+        <addressOffset>0x28</addressOffset>
+        <size>0x20</size>
+      </register>
+      <fields>
+        <field>
+          <name>PSC</name>
           <bitOffset>0</bitOffset>
           <bitWidth>16</bitWidth>
         </field>
@@ -3592,7 +3337,7 @@
       </fields>
       <register>
         <name>ARR</name>
-        <addressOffset>0x18</addressOffset>
+        <addressOffset>0x2c</addressOffset>
         <size>0x20</size>
       </register>
       <fields>
@@ -3605,45 +3350,6 @@
           <name>s</name>
           <bitOffset>16</bitOffset>
           <bitWidth>16</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>CNT</name>
-        <addressOffset>0x1c</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>CNT</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>16</bitWidth>
-        </field>
-        <field>
-          <name>s</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>16</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>OR</name>
-        <addressOffset>0x20</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>OR_0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>OR_1</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>s</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>30</bitWidth>
         </field>
       </fields>
     </peripheral>
@@ -65762,7 +65468,7 @@
         </field>
       </fields>
       <register>
-        <name>DINRx=96,64,32,0</name>
+        <name>DINR</name>
         <addressOffset>0x8</addressOffset>
         <size>0x20</size>
       </register>
@@ -65774,7 +65480,7 @@
         </field>
       </fields>
       <register>
-        <name>DOUTRx=96,64,32,0</name>
+        <name>DOUTR</name>
         <addressOffset>0xc</addressOffset>
         <size>0x20</size>
       </register>
@@ -66235,31 +65941,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR0</name>
-        <addressOffset>0xf8</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>CS0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>32</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>CSR.0</name>
-        <addressOffset>0xfc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>CSx</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>32</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>CSR.1</name>
+        <name>CSR1</name>
         <addressOffset>0x100</addressOffset>
         <size>0x20</size>
       </register>
@@ -66271,7 +65953,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.2</name>
+        <name>CSR2</name>
         <addressOffset>0x104</addressOffset>
         <size>0x20</size>
       </register>
@@ -66283,7 +65965,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.3</name>
+        <name>CSR3</name>
         <addressOffset>0x108</addressOffset>
         <size>0x20</size>
       </register>
@@ -66295,7 +65977,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.4</name>
+        <name>CSR4</name>
         <addressOffset>0x10c</addressOffset>
         <size>0x20</size>
       </register>
@@ -66307,7 +65989,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.5</name>
+        <name>CSR5</name>
         <addressOffset>0x110</addressOffset>
         <size>0x20</size>
       </register>
@@ -66319,7 +66001,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.6</name>
+        <name>CSR6</name>
         <addressOffset>0x114</addressOffset>
         <size>0x20</size>
       </register>
@@ -66331,7 +66013,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.7</name>
+        <name>CSR7</name>
         <addressOffset>0x118</addressOffset>
         <size>0x20</size>
       </register>
@@ -66343,7 +66025,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.8</name>
+        <name>CSR8</name>
         <addressOffset>0x11c</addressOffset>
         <size>0x20</size>
       </register>
@@ -66355,7 +66037,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.9</name>
+        <name>CSR9</name>
         <addressOffset>0x120</addressOffset>
         <size>0x20</size>
       </register>
@@ -66367,7 +66049,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.10</name>
+        <name>CSR10</name>
         <addressOffset>0x124</addressOffset>
         <size>0x20</size>
       </register>
@@ -66379,7 +66061,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.11</name>
+        <name>CSR11</name>
         <addressOffset>0x128</addressOffset>
         <size>0x20</size>
       </register>
@@ -66391,7 +66073,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.12</name>
+        <name>CSR12</name>
         <addressOffset>0x12c</addressOffset>
         <size>0x20</size>
       </register>
@@ -66403,7 +66085,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.13</name>
+        <name>CSR13</name>
         <addressOffset>0x130</addressOffset>
         <size>0x20</size>
       </register>
@@ -66415,7 +66097,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.14</name>
+        <name>CSR14</name>
         <addressOffset>0x134</addressOffset>
         <size>0x20</size>
       </register>
@@ -66427,7 +66109,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.15</name>
+        <name>CSR15</name>
         <addressOffset>0x138</addressOffset>
         <size>0x20</size>
       </register>
@@ -66439,7 +66121,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.16</name>
+        <name>CSR16</name>
         <addressOffset>0x13c</addressOffset>
         <size>0x20</size>
       </register>
@@ -66451,7 +66133,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.17</name>
+        <name>CSR17</name>
         <addressOffset>0x140</addressOffset>
         <size>0x20</size>
       </register>
@@ -66463,7 +66145,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.18</name>
+        <name>CSR18</name>
         <addressOffset>0x144</addressOffset>
         <size>0x20</size>
       </register>
@@ -66475,7 +66157,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.19</name>
+        <name>CSR19</name>
         <addressOffset>0x148</addressOffset>
         <size>0x20</size>
       </register>
@@ -66487,7 +66169,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.20</name>
+        <name>CSR20</name>
         <addressOffset>0x14c</addressOffset>
         <size>0x20</size>
       </register>
@@ -66499,7 +66181,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.21</name>
+        <name>CSR21</name>
         <addressOffset>0x150</addressOffset>
         <size>0x20</size>
       </register>
@@ -66511,7 +66193,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.22</name>
+        <name>CSR22</name>
         <addressOffset>0x154</addressOffset>
         <size>0x20</size>
       </register>
@@ -66523,7 +66205,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.23</name>
+        <name>CSR23</name>
         <addressOffset>0x158</addressOffset>
         <size>0x20</size>
       </register>
@@ -66535,7 +66217,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.24</name>
+        <name>CSR24</name>
         <addressOffset>0x15c</addressOffset>
         <size>0x20</size>
       </register>
@@ -66547,7 +66229,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.25</name>
+        <name>CSR25</name>
         <addressOffset>0x160</addressOffset>
         <size>0x20</size>
       </register>
@@ -66559,7 +66241,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.26</name>
+        <name>CSR26</name>
         <addressOffset>0x164</addressOffset>
         <size>0x20</size>
       </register>
@@ -66571,7 +66253,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.27</name>
+        <name>CSR27</name>
         <addressOffset>0x168</addressOffset>
         <size>0x20</size>
       </register>
@@ -66583,7 +66265,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.28</name>
+        <name>CSR28</name>
         <addressOffset>0x16c</addressOffset>
         <size>0x20</size>
       </register>
@@ -66595,7 +66277,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.29</name>
+        <name>CSR29</name>
         <addressOffset>0x170</addressOffset>
         <size>0x20</size>
       </register>
@@ -66607,7 +66289,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.30</name>
+        <name>CSR30</name>
         <addressOffset>0x174</addressOffset>
         <size>0x20</size>
       </register>
@@ -66619,7 +66301,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.31</name>
+        <name>CSR31</name>
         <addressOffset>0x178</addressOffset>
         <size>0x20</size>
       </register>
@@ -66631,7 +66313,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.32</name>
+        <name>CSR32</name>
         <addressOffset>0x17c</addressOffset>
         <size>0x20</size>
       </register>
@@ -66643,7 +66325,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.33</name>
+        <name>CSR33</name>
         <addressOffset>0x180</addressOffset>
         <size>0x20</size>
       </register>
@@ -66655,7 +66337,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.34</name>
+        <name>CSR34</name>
         <addressOffset>0x184</addressOffset>
         <size>0x20</size>
       </register>
@@ -66667,7 +66349,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.35</name>
+        <name>CSR35</name>
         <addressOffset>0x188</addressOffset>
         <size>0x20</size>
       </register>
@@ -66679,7 +66361,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.36</name>
+        <name>CSR36</name>
         <addressOffset>0x18c</addressOffset>
         <size>0x20</size>
       </register>
@@ -66691,7 +66373,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.37</name>
+        <name>CSR37</name>
         <addressOffset>0x190</addressOffset>
         <size>0x20</size>
       </register>
@@ -66703,7 +66385,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.38</name>
+        <name>CSR38</name>
         <addressOffset>0x194</addressOffset>
         <size>0x20</size>
       </register>
@@ -66715,7 +66397,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.39</name>
+        <name>CSR39</name>
         <addressOffset>0x198</addressOffset>
         <size>0x20</size>
       </register>
@@ -66727,7 +66409,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.40</name>
+        <name>CSR40</name>
         <addressOffset>0x19c</addressOffset>
         <size>0x20</size>
       </register>
@@ -66739,7 +66421,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.41</name>
+        <name>CSR41</name>
         <addressOffset>0x1a0</addressOffset>
         <size>0x20</size>
       </register>
@@ -66751,7 +66433,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.42</name>
+        <name>CSR42</name>
         <addressOffset>0x1a4</addressOffset>
         <size>0x20</size>
       </register>
@@ -66763,7 +66445,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.43</name>
+        <name>CSR43</name>
         <addressOffset>0x1a8</addressOffset>
         <size>0x20</size>
       </register>
@@ -66775,7 +66457,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.44</name>
+        <name>CSR44</name>
         <addressOffset>0x1ac</addressOffset>
         <size>0x20</size>
       </register>
@@ -66787,7 +66469,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.45</name>
+        <name>CSR45</name>
         <addressOffset>0x1b0</addressOffset>
         <size>0x20</size>
       </register>
@@ -66799,7 +66481,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.46</name>
+        <name>CSR46</name>
         <addressOffset>0x1b4</addressOffset>
         <size>0x20</size>
       </register>
@@ -66811,7 +66493,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.47</name>
+        <name>CSR47</name>
         <addressOffset>0x1b8</addressOffset>
         <size>0x20</size>
       </register>
@@ -66823,7 +66505,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.48</name>
+        <name>CSR48</name>
         <addressOffset>0x1bc</addressOffset>
         <size>0x20</size>
       </register>
@@ -66835,7 +66517,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.49</name>
+        <name>CSR49</name>
         <addressOffset>0x1c0</addressOffset>
         <size>0x20</size>
       </register>
@@ -66847,7 +66529,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.50</name>
+        <name>CSR50</name>
         <addressOffset>0x1c4</addressOffset>
         <size>0x20</size>
       </register>
@@ -66859,7 +66541,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.51</name>
+        <name>CSR51</name>
         <addressOffset>0x1c8</addressOffset>
         <size>0x20</size>
       </register>
@@ -66871,7 +66553,7 @@
         </field>
       </fields>
       <register>
-        <name>CSR.52</name>
+        <name>CSR52</name>
         <addressOffset>0x1cc</addressOffset>
         <size>0x20</size>
       </register>

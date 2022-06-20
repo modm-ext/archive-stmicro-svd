@@ -1510,7 +1510,7 @@
       </register>
     </peripheral>
     <peripheral>
-      <name>RTC</name>
+      <name>BKP</name>
       <baseAddress>0x40002800</baseAddress>
       <register>
         <name>TR</name>
@@ -2437,7 +2437,7 @@
       </fields>
     </peripheral>
     <peripheral>
-      <name>BKP</name>
+      <name>RTC</name>
       <baseAddress>0x40002800</baseAddress>
       <register>
         <name>TR</name>
@@ -8442,6 +8442,114 @@
       </fields>
     </peripheral>
     <peripheral>
+      <name>COMP</name>
+      <baseAddress>0x40010000</baseAddress>
+      <register>
+        <name>COMP1_CSR</name>
+        <addressOffset>0x18</addressOffset>
+        <size>0x20</size>
+      </register>
+      <fields>
+        <field>
+          <name>COMP1EN</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>1</bitOffset>
+          <bitWidth>29</bitWidth>
+        </field>
+        <field>
+          <name>COMP1INNSEL</name>
+          <bitOffset>4</bitOffset>
+          <bitWidth>2</bitWidth>
+        </field>
+        <field>
+          <name>COMP1WM</name>
+          <bitOffset>8</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>COMP1LPTIMIN1</name>
+          <bitOffset>12</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>COMP1POLARITY</name>
+          <bitOffset>15</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>COMP1VALUE</name>
+          <bitOffset>30</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>COMP1LOCK</name>
+          <bitOffset>31</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+      </fields>
+      <register>
+        <name>COMP2_CSR</name>
+        <addressOffset>0x1c</addressOffset>
+        <size>0x20</size>
+      </register>
+      <fields>
+        <field>
+          <name>COMP2EN</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>1</bitOffset>
+          <bitWidth>29</bitWidth>
+        </field>
+        <field>
+          <name>COMP2SPEED</name>
+          <bitOffset>3</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>COMP2INNSEL</name>
+          <bitOffset>4</bitOffset>
+          <bitWidth>3</bitWidth>
+        </field>
+        <field>
+          <name>COMP2INPSEL</name>
+          <bitOffset>8</bitOffset>
+          <bitWidth>3</bitWidth>
+        </field>
+        <field>
+          <name>COMP2LPTIMIN2</name>
+          <bitOffset>12</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>COMP2LPTIMIN1</name>
+          <bitOffset>13</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>COMP2POLARITY</name>
+          <bitOffset>15</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>COMP2VALUE</name>
+          <bitOffset>30</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>COMP2LOCK</name>
+          <bitOffset>31</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+      </fields>
+    </peripheral>
+    <peripheral>
       <name>SYSCFG</name>
       <baseAddress>0x40010000</baseAddress>
       <register>
@@ -8694,114 +8802,6 @@
         </field>
         <field>
           <name>REF_LOCK</name>
-          <bitOffset>31</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-      </fields>
-    </peripheral>
-    <peripheral>
-      <name>COMP</name>
-      <baseAddress>0x40010000</baseAddress>
-      <register>
-        <name>COMP1_CSR</name>
-        <addressOffset>0x18</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>COMP1EN</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>s</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>29</bitWidth>
-        </field>
-        <field>
-          <name>COMP1INNSEL</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>COMP1WM</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>COMP1LPTIMIN1</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>COMP1POLARITY</name>
-          <bitOffset>15</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>COMP1VALUE</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>COMP1LOCK</name>
-          <bitOffset>31</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>COMP2_CSR</name>
-        <addressOffset>0x1c</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>COMP2EN</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>s</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>29</bitWidth>
-        </field>
-        <field>
-          <name>COMP2SPEED</name>
-          <bitOffset>3</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>COMP2INNSEL</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>3</bitWidth>
-        </field>
-        <field>
-          <name>COMP2INPSEL</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>3</bitWidth>
-        </field>
-        <field>
-          <name>COMP2LPTIMIN2</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>COMP2LPTIMIN1</name>
-          <bitOffset>13</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>COMP2POLARITY</name>
-          <bitOffset>15</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>COMP2VALUE</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>COMP2LOCK</name>
           <bitOffset>31</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
@@ -14352,7 +14352,7 @@
         </field>
       </fields>
       <register>
-        <name>DINRx=96,64,32,0</name>
+        <name>DINR</name>
         <addressOffset>0x8</addressOffset>
         <size>0x20</size>
       </register>
@@ -14364,7 +14364,7 @@
         </field>
       </fields>
       <register>
-        <name>DOUTRx=96,64,32,0</name>
+        <name>DOUTR</name>
         <addressOffset>0xc</addressOffset>
         <size>0x20</size>
       </register>

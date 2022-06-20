@@ -5955,7 +5955,7 @@
       <name>USART2</name>
       <baseAddress>0x40004400</baseAddress>
       <register>
-        <name>CR1FIFOenabled</name>
+        <name>CR1FIFO_EN</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -6082,7 +6082,7 @@
         </field>
       </fields>
       <register>
-        <name>CR1FIFOdisabled</name>
+        <name>CR1FIFO_DIS</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -6541,7 +6541,7 @@
         </field>
       </fields>
       <register>
-        <name>ISRFIFOmodeenabled</name>
+        <name>ISRFIFO_EN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -6693,7 +6693,7 @@
         </field>
       </fields>
       <register>
-        <name>ISRFIFOmodedisabled</name>
+        <name>ISRFIFO_DIS</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -6967,7 +6967,7 @@
       <name>USART3</name>
       <baseAddress>0x40004800</baseAddress>
       <register>
-        <name>CR1FIFOenabled</name>
+        <name>CR1FIFO_EN</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -7094,7 +7094,7 @@
         </field>
       </fields>
       <register>
-        <name>CR1FIFOdisabled</name>
+        <name>CR1FIFO_DIS</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -7553,7 +7553,7 @@
         </field>
       </fields>
       <register>
-        <name>ISRFIFOmodeenabled</name>
+        <name>ISRFIFO_EN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -7705,7 +7705,7 @@
         </field>
       </fields>
       <register>
-        <name>ISRFIFOmodedisabled</name>
+        <name>ISRFIFO_DIS</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -7979,7 +7979,7 @@
       <name>UART4</name>
       <baseAddress>0x40004c00</baseAddress>
       <register>
-        <name>CR1FIFOenabled</name>
+        <name>CR1FIFO_EN</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -8106,7 +8106,7 @@
         </field>
       </fields>
       <register>
-        <name>CR1FIFOdisabled</name>
+        <name>CR1FIFO_DIS</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -8565,7 +8565,7 @@
         </field>
       </fields>
       <register>
-        <name>ISRFIFOmodeenabled</name>
+        <name>ISRFIFO_EN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -8717,7 +8717,7 @@
         </field>
       </fields>
       <register>
-        <name>ISRFIFOmodedisabled</name>
+        <name>ISRFIFO_DIS</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -8991,7 +8991,7 @@
       <name>UART5</name>
       <baseAddress>0x40005000</baseAddress>
       <register>
-        <name>CR1FIFOenabled</name>
+        <name>CR1FIFO_EN</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -9118,7 +9118,7 @@
         </field>
       </fields>
       <register>
-        <name>CR1FIFOdisabled</name>
+        <name>CR1FIFO_DIS</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -9577,7 +9577,7 @@
         </field>
       </fields>
       <register>
-        <name>ISRFIFOmodeenabled</name>
+        <name>ISRFIFO_EN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -9729,7 +9729,7 @@
         </field>
       </fields>
       <register>
-        <name>ISRFIFOmodedisabled</name>
+        <name>ISRFIFO_DIS</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -16817,7 +16817,7 @@
       <name>LPUART1</name>
       <baseAddress>0x40008000</baseAddress>
       <register>
-        <name>CR1FIFOmodeenabled</name>
+        <name>CR1FIFO_EN</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -16934,7 +16934,7 @@
         </field>
       </fields>
       <register>
-        <name>CR1FIFOmodedisabled</name>
+        <name>CR1FIFO_DIS</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -17239,7 +17239,7 @@
         </field>
       </fields>
       <register>
-        <name>ISRFIFOmodeenabled</name>
+        <name>ISRFIFO_EN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -17356,7 +17356,7 @@
         </field>
       </fields>
       <register>
-        <name>ISRFIFOmodedisabled</name>
+        <name>ISRFIFO_DIS</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -23635,7 +23635,7 @@
       <name>USART1</name>
       <baseAddress>0x40013800</baseAddress>
       <register>
-        <name>CR1FIFOenabled</name>
+        <name>CR1FIFO_EN</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -23762,7 +23762,7 @@
         </field>
       </fields>
       <register>
-        <name>CR1FIFOdisabled</name>
+        <name>CR1FIFO_DIS</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -24221,7 +24221,7 @@
         </field>
       </fields>
       <register>
-        <name>ISRFIFOmodeenabled</name>
+        <name>ISRFIFO_EN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -24373,7 +24373,7 @@
         </field>
       </fields>
       <register>
-        <name>ISRFIFOmodedisabled</name>
+        <name>ISRFIFO_DIS</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>

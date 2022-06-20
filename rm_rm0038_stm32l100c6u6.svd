@@ -290,7 +290,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -347,7 +347,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -384,7 +384,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2OutputComparemode</name>
+        <name>CCMR2_OUT</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -441,7 +441,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2InputCapturemode</name>
+        <name>CCMR2_IN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -668,25 +668,13 @@
         </field>
       </fields>
       <register>
-        <name>TIM2_OR</name>
+        <name>OR</name>
         <addressOffset>0x50</addressOffset>
         <size>0x20</size>
       </register>
       <fields>
         <field>
           <name>ITR1_RMP</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>TIM3_OR</name>
-        <addressOffset>0x50</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>ITR2_RMP</name>
           <bitOffset>0</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
@@ -973,7 +961,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -1030,7 +1018,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -1067,7 +1055,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2OutputComparemode</name>
+        <name>CCMR2_OUT</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -1124,7 +1112,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2InputCapturemode</name>
+        <name>CCMR2_IN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -1351,19 +1339,7 @@
         </field>
       </fields>
       <register>
-        <name>TIM2_OR</name>
-        <addressOffset>0x50</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>ITR1_RMP</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>TIM3_OR</name>
+        <name>OR</name>
         <addressOffset>0x50</addressOffset>
         <size>0x20</size>
       </register>
@@ -1656,7 +1632,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -1713,7 +1689,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -1750,7 +1726,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2OutputComparemode</name>
+        <name>CCMR2_OUT</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -1807,7 +1783,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2InputCapturemode</name>
+        <name>CCMR2_IN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -2031,30 +2007,6 @@
           <name>DMAB</name>
           <bitOffset>0</bitOffset>
           <bitWidth>16</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>TIM2_OR</name>
-        <addressOffset>0x50</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>ITR1_RMP</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>TIM3_OR</name>
-        <addressOffset>0x50</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>ITR2_RMP</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
         </field>
       </fields>
     </peripheral>
@@ -2339,7 +2291,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -2396,7 +2348,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -2433,7 +2385,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2OutputComparemode</name>
+        <name>CCMR2_OUT</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -2490,7 +2442,7 @@
         </field>
       </fields>
       <register>
-        <name>CCMR2InputCapturemode</name>
+        <name>CCMR2_IN</name>
         <addressOffset>0x1c</addressOffset>
         <size>0x20</size>
       </register>
@@ -2714,30 +2666,6 @@
           <name>DMAB</name>
           <bitOffset>0</bitOffset>
           <bitWidth>16</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>TIM2_OR</name>
-        <addressOffset>0x50</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>ITR1_RMP</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>TIM3_OR</name>
-        <addressOffset>0x50</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>ITR2_RMP</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
         </field>
       </fields>
     </peripheral>
@@ -8457,7 +8385,7 @@
       <name>COMP</name>
       <baseAddress>0x40007c00</baseAddress>
       <register>
-        <name>CSR</name>
+        <name>COMP_CSR</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -8526,6 +8454,11 @@
           <name>OUTSEL</name>
           <bitOffset>21</bitOffset>
           <bitWidth>3</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>24</bitOffset>
+          <bitWidth>2</bitWidth>
         </field>
         <field>
           <name>FCH3</name>
@@ -8981,7 +8914,7 @@
       <name>OPAMP</name>
       <baseAddress>0x40007c5c</baseAddress>
       <register>
-        <name>CSR</name>
+        <name>OPAMP_CSR</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
       </register>
@@ -9148,7 +9081,7 @@
         </field>
       </fields>
       <register>
-        <name>OTR</name>
+        <name>OPAMP_OTR</name>
         <addressOffset>0x4</addressOffset>
         <size>0x20</size>
       </register>
@@ -9190,7 +9123,7 @@
         </field>
       </fields>
       <register>
-        <name>LPOTR</name>
+        <name>OPAMP_LPOTR</name>
         <addressOffset>0x8</addressOffset>
         <size>0x20</size>
       </register>
@@ -9517,12 +9450,12 @@
         <size>0x20</size>
       </register>
       <register>
-        <name>CCMR1OutputComparemode</name>
+        <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
       <register>
-        <name>CCMR1InputCapturemode</name>
+        <name>CCMR1_IN</name>
         <addressOffset>0x18</addressOffset>
         <size>0x20</size>
       </register>
@@ -9589,7 +9522,7 @@
         <size>0x20</size>
       </register>
       <register>
-        <name>TIM9_OR</name>
+        <name>OR</name>
         <addressOffset>0x50</addressOffset>
         <size>0x20</size>
       </register>
@@ -10480,7 +10413,7 @@
       </register>
       <fields>
         <field>
-          <name>SQ</name>
+          <name>gularSQ</name>
           <bitOffset>0</bitOffset>
           <bitWidth>20</bitWidth>
         </field>
@@ -10497,7 +10430,7 @@
       </register>
       <fields>
         <field>
-          <name>SQ</name>
+          <name>gularSQ</name>
           <bitOffset>0</bitOffset>
           <bitWidth>30</bitWidth>
         </field>
@@ -10509,7 +10442,7 @@
       </register>
       <fields>
         <field>
-          <name>SQ</name>
+          <name>gularSQ</name>
           <bitOffset>0</bitOffset>
           <bitWidth>30</bitWidth>
         </field>
@@ -10521,7 +10454,7 @@
       </register>
       <fields>
         <field>
-          <name>SQ</name>
+          <name>gularSQ</name>
           <bitOffset>0</bitOffset>
           <bitWidth>30</bitWidth>
         </field>
@@ -10533,7 +10466,7 @@
       </register>
       <fields>
         <field>
-          <name>SQ</name>
+          <name>gularSQ</name>
           <bitOffset>0</bitOffset>
           <bitWidth>30</bitWidth>
         </field>
@@ -10610,7 +10543,7 @@
       </register>
       <fields>
         <field>
-          <name>DATA</name>
+          <name>gularDATA</name>
           <bitOffset>0</bitOffset>
           <bitWidth>16</bitWidth>
         </field>
@@ -11788,180 +11721,6 @@
       <name>GPIOA</name>
       <baseAddress>0x40020000</baseAddress>
       <register>
-        <name>GPIOA_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
         <name>MODER</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
@@ -12218,267 +11977,6 @@
         </field>
         <field>
           <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_OSPEEDR</name>
-        <addressOffset>0x8</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>OSPEEDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOA_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
           <bitOffset>30</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
@@ -13189,180 +12687,6 @@
       <name>GPIOB</name>
       <baseAddress>0x40020400</baseAddress>
       <register>
-        <name>GPIOA_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
         <name>MODER</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
@@ -13619,267 +12943,6 @@
         </field>
         <field>
           <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_OSPEEDR</name>
-        <addressOffset>0x8</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>OSPEEDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOA_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
           <bitOffset>30</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
@@ -14590,180 +13653,6 @@
       <name>GPIOC</name>
       <baseAddress>0x40020800</baseAddress>
       <register>
-        <name>GPIOA_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
         <name>MODER</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
@@ -15020,267 +13909,6 @@
         </field>
         <field>
           <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_OSPEEDR</name>
-        <addressOffset>0x8</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>OSPEEDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOA_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
           <bitOffset>30</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
@@ -15991,180 +14619,6 @@
       <name>GPIOD</name>
       <baseAddress>0x40020c00</baseAddress>
       <register>
-        <name>GPIOA_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
         <name>MODER</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
@@ -16421,267 +14875,6 @@
         </field>
         <field>
           <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_OSPEEDR</name>
-        <addressOffset>0x8</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>OSPEEDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOA_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
           <bitOffset>30</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
@@ -17392,180 +15585,6 @@
       <name>GPIOE</name>
       <baseAddress>0x40021000</baseAddress>
       <register>
-        <name>GPIOA_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
         <name>MODER</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
@@ -17822,267 +15841,6 @@
         </field>
         <field>
           <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_OSPEEDR</name>
-        <addressOffset>0x8</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>OSPEEDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOA_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
           <bitOffset>30</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
@@ -18793,180 +16551,6 @@
       <name>GPIOH</name>
       <baseAddress>0x40021400</baseAddress>
       <register>
-        <name>GPIOA_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
         <name>MODER</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
@@ -19223,267 +16807,6 @@
         </field>
         <field>
           <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_OSPEEDR</name>
-        <addressOffset>0x8</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>OSPEEDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOA_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
           <bitOffset>30</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
@@ -20194,180 +17517,6 @@
       <name>GPIOF</name>
       <baseAddress>0x40021800</baseAddress>
       <register>
-        <name>GPIOA_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
         <name>MODER</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
@@ -20624,267 +17773,6 @@
         </field>
         <field>
           <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_OSPEEDR</name>
-        <addressOffset>0x8</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>OSPEEDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOA_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
           <bitOffset>30</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
@@ -21595,180 +18483,6 @@
       <name>GPIOG</name>
       <baseAddress>0x40021c00</baseAddress>
       <register>
-        <name>GPIOA_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_MODER</name>
-        <addressOffset>0x0</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>MODER0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>MODER15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
         <name>MODER</name>
         <addressOffset>0x0</addressOffset>
         <size>0x20</size>
@@ -22025,267 +18739,6 @@
         </field>
         <field>
           <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_OSPEEDR</name>
-        <addressOffset>0x8</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>OSPEEDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>OSPEEDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOA_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
-          <bitOffset>30</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>GPIOB_PUPDR</name>
-        <addressOffset>0xc</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>PUPDR0</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR1</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR2</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR3</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR4</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR5</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR6</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR7</name>
-          <bitOffset>14</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR8</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR9</name>
-          <bitOffset>18</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR10</name>
-          <bitOffset>20</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR11</name>
-          <bitOffset>22</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR12</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR13</name>
-          <bitOffset>26</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR14</name>
-          <bitOffset>28</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>PUPDR15</name>
           <bitOffset>30</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
@@ -23700,6 +20153,11 @@
           <bitWidth>1</bitWidth>
         </field>
         <field>
+          <name>s</name>
+          <bitOffset>6</bitOffset>
+          <bitWidth>3</bitWidth>
+        </field>
+        <field>
           <name>LCDEN</name>
           <bitOffset>9</bitOffset>
           <bitWidth>1</bitWidth>
@@ -23934,6 +20392,11 @@
           <name>TIM7LPEN</name>
           <bitOffset>5</bitOffset>
           <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>6</bitOffset>
+          <bitWidth>3</bitWidth>
         </field>
         <field>
           <name>LCDLPEN</name>
@@ -24384,11 +20847,6 @@
           <bitWidth>32</bitWidth>
         </field>
       </fields>
-      <register>
-        <name>:</name>
-        <addressOffset>0x88</addressOffset>
-        <size>0x20</size>
-      </register>
       <register>
         <name>WRPR4</name>
         <addressOffset>0x88</addressOffset>
@@ -26769,6 +23227,11 @@
           <bitOffset>28</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
+        <field>
+          <name>s</name>
+          <bitOffset>30</bitOffset>
+          <bitWidth>2</bitWidth>
+        </field>
       </fields>
       <register>
         <name>BCR2</name>
@@ -26891,6 +23354,11 @@
         <field>
           <name>ACCMOD</name>
           <bitOffset>28</bitOffset>
+          <bitWidth>2</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>30</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
       </fields>
@@ -27017,6 +23485,11 @@
           <bitOffset>28</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
+        <field>
+          <name>s</name>
+          <bitOffset>30</bitOffset>
+          <bitWidth>2</bitWidth>
+        </field>
       </fields>
       <register>
         <name>BCR4</name>
@@ -27141,6 +23614,11 @@
           <bitOffset>28</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
+        <field>
+          <name>s</name>
+          <bitOffset>30</bitOffset>
+          <bitWidth>2</bitWidth>
+        </field>
       </fields>
       <register>
         <name>BWTR1</name>
@@ -27167,6 +23645,11 @@
           <name>BUSTURN</name>
           <bitOffset>16</bitOffset>
           <bitWidth>4</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>20</bitOffset>
+          <bitWidth>12</bitWidth>
         </field>
         <field>
           <name>ACCMOD</name>
@@ -27201,6 +23684,11 @@
           <bitWidth>4</bitWidth>
         </field>
         <field>
+          <name>s</name>
+          <bitOffset>20</bitOffset>
+          <bitWidth>12</bitWidth>
+        </field>
+        <field>
           <name>ACCMOD</name>
           <bitOffset>28</bitOffset>
           <bitWidth>2</bitWidth>
@@ -27233,6 +23721,11 @@
           <bitWidth>4</bitWidth>
         </field>
         <field>
+          <name>s</name>
+          <bitOffset>20</bitOffset>
+          <bitWidth>12</bitWidth>
+        </field>
+        <field>
           <name>ACCMOD</name>
           <bitOffset>28</bitOffset>
           <bitWidth>2</bitWidth>
@@ -27263,6 +23756,11 @@
           <name>BUSTURN</name>
           <bitOffset>16</bitOffset>
           <bitWidth>4</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>20</bitOffset>
+          <bitWidth>12</bitWidth>
         </field>
         <field>
           <name>ACCMOD</name>

@@ -2785,32 +2785,32 @@
       </register>
       <fields>
         <field>
-          <name>0CEN</name>
+          <name>CEN</name>
           <bitOffset>0</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>0UDIS</name>
+          <name>UDIS</name>
           <bitOffset>1</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>0URS</name>
+          <name>URS</name>
           <bitOffset>2</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>0OPM</name>
+          <name>OPM</name>
           <bitOffset>3</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>0ARPE</name>
+          <name>ARPE</name>
           <bitOffset>7</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>CKD00</name>
+          <name>CKD</name>
           <bitOffset>8</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
@@ -2822,12 +2822,12 @@
       </register>
       <fields>
         <field>
-          <name>SMS000</name>
+          <name>SMS</name>
           <bitOffset>0</bitOffset>
           <bitWidth>3</bitWidth>
         </field>
         <field>
-          <name>TS000</name>
+          <name>TS</name>
           <bitOffset>4</bitOffset>
           <bitWidth>3</bitWidth>
         </field>
@@ -2837,6 +2837,28 @@
         <addressOffset>0xc</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>UIE</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC1IE</name>
+          <bitOffset>1</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC2IE</name>
+          <bitOffset>2</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>TIE</name>
+          <bitOffset>6</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>SR</name>
         <addressOffset>0x10</addressOffset>
@@ -2879,6 +2901,28 @@
         <addressOffset>0x14</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>UG</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC1G</name>
+          <bitOffset>1</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC2G</name>
+          <bitOffset>2</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>TG</name>
+          <bitOffset>6</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
@@ -2886,42 +2930,42 @@
       </register>
       <fields>
         <field>
-          <name>CC1S00</name>
+          <name>CC1S</name>
           <bitOffset>0</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
         <field>
-          <name>0OC1FE</name>
+          <name>OC1FE</name>
           <bitOffset>2</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>0OC1PE</name>
+          <name>OC1PE</name>
           <bitOffset>3</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>OC1M000</name>
+          <name>OC1M</name>
           <bitOffset>4</bitOffset>
           <bitWidth>3</bitWidth>
         </field>
         <field>
-          <name>CC2S00</name>
+          <name>CC2S</name>
           <bitOffset>8</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
         <field>
-          <name>0OC2FE</name>
+          <name>OC2FE</name>
           <bitOffset>10</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>0OC2PE</name>
+          <name>OC2PE</name>
           <bitOffset>11</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>OC2M000</name>
+          <name>OC2M</name>
           <bitOffset>12</bitOffset>
           <bitWidth>3</bitWidth>
         </field>
@@ -2933,32 +2977,32 @@
       </register>
       <fields>
         <field>
-          <name>CC1S00</name>
+          <name>CC1S</name>
           <bitOffset>0</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
         <field>
-          <name>IC1PSC00</name>
+          <name>IC1PSC</name>
           <bitOffset>2</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
         <field>
-          <name>IC1F0000</name>
+          <name>IC1F</name>
           <bitOffset>4</bitOffset>
           <bitWidth>4</bitWidth>
         </field>
         <field>
-          <name>CC2S00</name>
+          <name>CC2S</name>
           <bitOffset>8</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
         <field>
-          <name>IC2PSC00</name>
+          <name>IC2PSC</name>
           <bitOffset>10</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
         <field>
-          <name>IC2F0000</name>
+          <name>IC2F</name>
           <bitOffset>12</bitOffset>
           <bitWidth>4</bitWidth>
         </field>
@@ -2968,31 +3012,98 @@
         <addressOffset>0x20</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>CC1E</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC1P</name>
+          <bitOffset>1</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC1NP</name>
+          <bitOffset>3</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC2E</name>
+          <bitOffset>4</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC2P</name>
+          <bitOffset>5</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC2NP</name>
+          <bitOffset>7</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>CNT</name>
         <addressOffset>0x24</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>CNT</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>16</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>PSC</name>
         <addressOffset>0x28</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>PSC</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>16</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>ARR</name>
         <addressOffset>0x2c</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>ARR</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>16</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>CCR1</name>
         <addressOffset>0x34</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>CCR1</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>16</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>CCR2</name>
         <addressOffset>0x38</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>CCR2</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>16</bitWidth>
+        </field>
+      </fields>
     </peripheral>
     <peripheral>
       <name>TIM13</name>
@@ -6746,6 +6857,11 @@
           <bitWidth>1</bitWidth>
         </field>
         <field>
+          <name>s</name>
+          <bitOffset>5</bitOffset>
+          <bitWidth>3</bitWidth>
+        </field>
+        <field>
           <name>TXM</name>
           <bitOffset>8</bitOffset>
           <bitWidth>1</bitWidth>
@@ -6791,6 +6907,11 @@
           <name>TERR0</name>
           <bitOffset>3</bitOffset>
           <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>4</bitOffset>
+          <bitWidth>19</bitWidth>
         </field>
         <field>
           <name>ABRQ0</name>
@@ -6977,6 +7098,11 @@
           <name>LECIE</name>
           <bitOffset>11</bitOffset>
           <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>12</bitOffset>
+          <bitWidth>3</bitWidth>
         </field>
         <field>
           <name>ERRIE</name>
@@ -7828,6 +7954,11 @@
           <bitWidth>1</bitWidth>
         </field>
         <field>
+          <name>s</name>
+          <bitOffset>5</bitOffset>
+          <bitWidth>3</bitWidth>
+        </field>
+        <field>
           <name>TXM</name>
           <bitOffset>8</bitOffset>
           <bitWidth>1</bitWidth>
@@ -7873,6 +8004,11 @@
           <name>TERR0</name>
           <bitOffset>3</bitOffset>
           <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>4</bitOffset>
+          <bitWidth>19</bitWidth>
         </field>
         <field>
           <name>ABRQ0</name>
@@ -8059,6 +8195,11 @@
           <name>LECIE</name>
           <bitOffset>11</bitOffset>
           <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>12</bitOffset>
+          <bitWidth>3</bitWidth>
         </field>
         <field>
           <name>ERRIE</name>
@@ -9520,6 +9661,11 @@
           <bitWidth>1</bitWidth>
         </field>
         <field>
+          <name>s</name>
+          <bitOffset>13</bitOffset>
+          <bitWidth>19</bitWidth>
+        </field>
+        <field>
           <name>EN2</name>
           <bitOffset>16</bitOffset>
           <bitWidth>1</bitWidth>
@@ -9848,73 +9994,6 @@
         </field>
       </fields>
       <register>
-        <name>MAPR</name>
-        <addressOffset>0x4</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>SPI1_REMAP</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>I2C1_REMAP</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>USART1_REMAP</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>USART2_REMAP</name>
-          <bitOffset>3</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>USART3_REMAP</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>TIM1_REMAP</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>TIM2_REMAP</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>TIM3_REMAP</name>
-          <bitOffset>10</bitOffset>
-          <bitWidth>2</bitWidth>
-        </field>
-        <field>
-          <name>TIM4_REMAP</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>PD01_REMAP</name>
-          <bitOffset>15</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>TIM5CH4_IREMAP</name>
-          <bitOffset>16</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>SWJ_CFG</name>
-          <bitOffset>24</bitOffset>
-          <bitWidth>3</bitWidth>
-        </field>
-      </fields>
-      <register>
         <name>EXTICR1</name>
         <addressOffset>0x8</addressOffset>
         <size>0x20</size>
@@ -10052,6 +10131,11 @@
           <name>TIM1_DMA_REMAP</name>
           <bitOffset>4</bitOffset>
           <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>5</bitOffset>
+          <bitWidth>3</bitWidth>
         </field>
         <field>
           <name>TIM13_REMAP</name>
@@ -10716,22 +10800,22 @@
       </register>
       <fields>
         <field>
-          <name>SQ13</name>
+          <name>SQ13conversioningularsequencebits</name>
           <bitOffset>0</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ141</name>
+          <name>SQ141conversioningularsequencebits</name>
           <bitOffset>5</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ15</name>
+          <name>SQ15conversioningularsequencebits</name>
           <bitOffset>10</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ16</name>
+          <name>SQ16conversioningularsequencebits</name>
           <bitOffset>15</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
@@ -10748,32 +10832,32 @@
       </register>
       <fields>
         <field>
-          <name>SQ7</name>
+          <name>SQ7conversioningularsequencebits</name>
           <bitOffset>0</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ8</name>
+          <name>SQ8conversioningularsequencebits</name>
           <bitOffset>5</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ9</name>
+          <name>SQ9conversioningularsequencebits</name>
           <bitOffset>10</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ10</name>
+          <name>SQ10conversioningularsequencebits</name>
           <bitOffset>15</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ11</name>
+          <name>SQ11conversioningularsequencebits</name>
           <bitOffset>20</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ12</name>
+          <name>SQ12conversioningularsequencebits</name>
           <bitOffset>25</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
@@ -10785,32 +10869,32 @@
       </register>
       <fields>
         <field>
-          <name>SQ1</name>
+          <name>SQ1conversioningularsequencebits</name>
           <bitOffset>0</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ2</name>
+          <name>SQ2conversioningularsequencebits</name>
           <bitOffset>5</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ3</name>
+          <name>SQ3conversioningularsequencebits</name>
           <bitOffset>10</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ4</name>
+          <name>SQ4conversioningularsequencebits</name>
           <bitOffset>15</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ5</name>
+          <name>SQ5conversioningularsequencebits</name>
           <bitOffset>20</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ6</name>
+          <name>SQ6conversioningularsequencebits</name>
           <bitOffset>25</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
@@ -10902,7 +10986,7 @@
       </register>
       <fields>
         <field>
-          <name>DATA</name>
+          <name>gularDATA</name>
           <bitOffset>0</bitOffset>
           <bitWidth>16</bitWidth>
         </field>
@@ -11195,22 +11279,22 @@
       </register>
       <fields>
         <field>
-          <name>SQ13</name>
+          <name>SQ13conversioningularsequencebits</name>
           <bitOffset>0</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ141</name>
+          <name>SQ141conversioningularsequencebits</name>
           <bitOffset>5</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ15</name>
+          <name>SQ15conversioningularsequencebits</name>
           <bitOffset>10</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ16</name>
+          <name>SQ16conversioningularsequencebits</name>
           <bitOffset>15</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
@@ -11227,32 +11311,32 @@
       </register>
       <fields>
         <field>
-          <name>SQ7</name>
+          <name>SQ7conversioningularsequencebits</name>
           <bitOffset>0</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ8</name>
+          <name>SQ8conversioningularsequencebits</name>
           <bitOffset>5</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ9</name>
+          <name>SQ9conversioningularsequencebits</name>
           <bitOffset>10</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ10</name>
+          <name>SQ10conversioningularsequencebits</name>
           <bitOffset>15</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ11</name>
+          <name>SQ11conversioningularsequencebits</name>
           <bitOffset>20</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ12</name>
+          <name>SQ12conversioningularsequencebits</name>
           <bitOffset>25</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
@@ -11264,32 +11348,32 @@
       </register>
       <fields>
         <field>
-          <name>SQ1</name>
+          <name>SQ1conversioningularsequencebits</name>
           <bitOffset>0</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ2</name>
+          <name>SQ2conversioningularsequencebits</name>
           <bitOffset>5</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ3</name>
+          <name>SQ3conversioningularsequencebits</name>
           <bitOffset>10</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ4</name>
+          <name>SQ4conversioningularsequencebits</name>
           <bitOffset>15</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ5</name>
+          <name>SQ5conversioningularsequencebits</name>
           <bitOffset>20</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ6</name>
+          <name>SQ6conversioningularsequencebits</name>
           <bitOffset>25</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
@@ -11381,7 +11465,7 @@
       </register>
       <fields>
         <field>
-          <name>DATA</name>
+          <name>gularDATA</name>
           <bitOffset>0</bitOffset>
           <bitWidth>16</bitWidth>
         </field>
@@ -13791,22 +13875,22 @@
       </register>
       <fields>
         <field>
-          <name>SQ13</name>
+          <name>SQ13conversioningularsequencebits</name>
           <bitOffset>0</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ141</name>
+          <name>SQ141conversioningularsequencebits</name>
           <bitOffset>5</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ15</name>
+          <name>SQ15conversioningularsequencebits</name>
           <bitOffset>10</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ16</name>
+          <name>SQ16conversioningularsequencebits</name>
           <bitOffset>15</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
@@ -13823,32 +13907,32 @@
       </register>
       <fields>
         <field>
-          <name>SQ7</name>
+          <name>SQ7conversioningularsequencebits</name>
           <bitOffset>0</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ8</name>
+          <name>SQ8conversioningularsequencebits</name>
           <bitOffset>5</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ9</name>
+          <name>SQ9conversioningularsequencebits</name>
           <bitOffset>10</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ10</name>
+          <name>SQ10conversioningularsequencebits</name>
           <bitOffset>15</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ11</name>
+          <name>SQ11conversioningularsequencebits</name>
           <bitOffset>20</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ12</name>
+          <name>SQ12conversioningularsequencebits</name>
           <bitOffset>25</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
@@ -13860,32 +13944,32 @@
       </register>
       <fields>
         <field>
-          <name>SQ1</name>
+          <name>SQ1conversioningularsequencebits</name>
           <bitOffset>0</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ2</name>
+          <name>SQ2conversioningularsequencebits</name>
           <bitOffset>5</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ3</name>
+          <name>SQ3conversioningularsequencebits</name>
           <bitOffset>10</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ4</name>
+          <name>SQ4conversioningularsequencebits</name>
           <bitOffset>15</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ5</name>
+          <name>SQ5conversioningularsequencebits</name>
           <bitOffset>20</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
         <field>
-          <name>SQ6</name>
+          <name>SQ6conversioningularsequencebits</name>
           <bitOffset>25</bitOffset>
           <bitWidth>5</bitWidth>
         </field>
@@ -13977,7 +14061,7 @@
       </register>
       <fields>
         <field>
-          <name>DATA</name>
+          <name>gularDATA</name>
           <bitOffset>0</bitOffset>
           <bitWidth>16</bitWidth>
         </field>
@@ -13998,32 +14082,32 @@
       </register>
       <fields>
         <field>
-          <name>0CEN</name>
+          <name>CEN</name>
           <bitOffset>0</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>0UDIS</name>
+          <name>UDIS</name>
           <bitOffset>1</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>0URS</name>
+          <name>URS</name>
           <bitOffset>2</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>0OPM</name>
+          <name>OPM</name>
           <bitOffset>3</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>0ARPE</name>
+          <name>ARPE</name>
           <bitOffset>7</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>CKD00</name>
+          <name>CKD</name>
           <bitOffset>8</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
@@ -14035,12 +14119,12 @@
       </register>
       <fields>
         <field>
-          <name>SMS000</name>
+          <name>SMS</name>
           <bitOffset>0</bitOffset>
           <bitWidth>3</bitWidth>
         </field>
         <field>
-          <name>TS000</name>
+          <name>TS</name>
           <bitOffset>4</bitOffset>
           <bitWidth>3</bitWidth>
         </field>
@@ -14050,6 +14134,28 @@
         <addressOffset>0xc</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>UIE</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC1IE</name>
+          <bitOffset>1</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC2IE</name>
+          <bitOffset>2</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>TIE</name>
+          <bitOffset>6</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>SR</name>
         <addressOffset>0x10</addressOffset>
@@ -14092,6 +14198,28 @@
         <addressOffset>0x14</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>UG</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC1G</name>
+          <bitOffset>1</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC2G</name>
+          <bitOffset>2</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>TG</name>
+          <bitOffset>6</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>CCMR1_OUT</name>
         <addressOffset>0x18</addressOffset>
@@ -14099,42 +14227,42 @@
       </register>
       <fields>
         <field>
-          <name>CC1S00</name>
+          <name>CC1S</name>
           <bitOffset>0</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
         <field>
-          <name>0OC1FE</name>
+          <name>OC1FE</name>
           <bitOffset>2</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>0OC1PE</name>
+          <name>OC1PE</name>
           <bitOffset>3</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>OC1M000</name>
+          <name>OC1M</name>
           <bitOffset>4</bitOffset>
           <bitWidth>3</bitWidth>
         </field>
         <field>
-          <name>CC2S00</name>
+          <name>CC2S</name>
           <bitOffset>8</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
         <field>
-          <name>0OC2FE</name>
+          <name>OC2FE</name>
           <bitOffset>10</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>0OC2PE</name>
+          <name>OC2PE</name>
           <bitOffset>11</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
         <field>
-          <name>OC2M000</name>
+          <name>OC2M</name>
           <bitOffset>12</bitOffset>
           <bitWidth>3</bitWidth>
         </field>
@@ -14146,32 +14274,32 @@
       </register>
       <fields>
         <field>
-          <name>CC1S00</name>
+          <name>CC1S</name>
           <bitOffset>0</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
         <field>
-          <name>IC1PSC00</name>
+          <name>IC1PSC</name>
           <bitOffset>2</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
         <field>
-          <name>IC1F0000</name>
+          <name>IC1F</name>
           <bitOffset>4</bitOffset>
           <bitWidth>4</bitWidth>
         </field>
         <field>
-          <name>CC2S00</name>
+          <name>CC2S</name>
           <bitOffset>8</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
         <field>
-          <name>IC2PSC00</name>
+          <name>IC2PSC</name>
           <bitOffset>10</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
         <field>
-          <name>IC2F0000</name>
+          <name>IC2F</name>
           <bitOffset>12</bitOffset>
           <bitWidth>4</bitWidth>
         </field>
@@ -14181,31 +14309,98 @@
         <addressOffset>0x20</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>CC1E</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC1P</name>
+          <bitOffset>1</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC1NP</name>
+          <bitOffset>3</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC2E</name>
+          <bitOffset>4</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC2P</name>
+          <bitOffset>5</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>CC2NP</name>
+          <bitOffset>7</bitOffset>
+          <bitWidth>1</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>CNT</name>
         <addressOffset>0x24</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>CNT</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>16</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>PSC</name>
         <addressOffset>0x28</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>PSC</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>16</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>ARR</name>
         <addressOffset>0x2c</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>ARR</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>16</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>CCR1</name>
         <addressOffset>0x34</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>CCR1</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>16</bitWidth>
+        </field>
+      </fields>
       <register>
         <name>CCR2</name>
         <addressOffset>0x38</addressOffset>
         <size>0x20</size>
       </register>
+      <fields>
+        <field>
+          <name>CCR2</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>16</bitWidth>
+        </field>
+      </fields>
     </peripheral>
     <peripheral>
       <name>TIM10</name>
@@ -19522,6 +19717,11 @@
       </register>
       <fields>
         <field>
+          <name>s</name>
+          <bitOffset>0</bitOffset>
+          <bitWidth>2</bitWidth>
+        </field>
+        <field>
           <name>SEDET</name>
           <bitOffset>2</bitOffset>
           <bitWidth>1</bitWidth>
@@ -20030,6 +20230,11 @@
           <name>NPTXQTOP</name>
           <bitOffset>24</bitOffset>
           <bitWidth>7</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>31</bitOffset>
+          <bitWidth>1</bitWidth>
         </field>
       </fields>
       <register>
@@ -23332,6 +23537,11 @@
           <bitOffset>28</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
+        <field>
+          <name>s</name>
+          <bitOffset>30</bitOffset>
+          <bitWidth>2</bitWidth>
+        </field>
       </fields>
       <register>
         <name>BCR2</name>
@@ -23454,6 +23664,11 @@
         <field>
           <name>ACCMOD</name>
           <bitOffset>28</bitOffset>
+          <bitWidth>2</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>30</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
       </fields>
@@ -23580,6 +23795,11 @@
           <bitOffset>28</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
+        <field>
+          <name>s</name>
+          <bitOffset>30</bitOffset>
+          <bitWidth>2</bitWidth>
+        </field>
       </fields>
       <register>
         <name>BCR4</name>
@@ -23704,6 +23924,11 @@
           <bitOffset>28</bitOffset>
           <bitWidth>2</bitWidth>
         </field>
+        <field>
+          <name>s</name>
+          <bitOffset>30</bitOffset>
+          <bitWidth>2</bitWidth>
+        </field>
       </fields>
       <register>
         <name>BWTR1</name>
@@ -23730,6 +23955,11 @@
           <name>BUSTURN</name>
           <bitOffset>16</bitOffset>
           <bitWidth>4</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>20</bitOffset>
+          <bitWidth>12</bitWidth>
         </field>
         <field>
           <name>ACCMOD</name>
@@ -23764,6 +23994,11 @@
           <bitWidth>4</bitWidth>
         </field>
         <field>
+          <name>s</name>
+          <bitOffset>20</bitOffset>
+          <bitWidth>12</bitWidth>
+        </field>
+        <field>
           <name>ACCMOD</name>
           <bitOffset>28</bitOffset>
           <bitWidth>2</bitWidth>
@@ -23796,6 +24031,11 @@
           <bitWidth>4</bitWidth>
         </field>
         <field>
+          <name>s</name>
+          <bitOffset>20</bitOffset>
+          <bitWidth>12</bitWidth>
+        </field>
+        <field>
           <name>ACCMOD</name>
           <bitOffset>28</bitOffset>
           <bitWidth>2</bitWidth>
@@ -23826,6 +24066,11 @@
           <name>BUSTURN</name>
           <bitOffset>16</bitOffset>
           <bitWidth>4</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>20</bitOffset>
+          <bitWidth>12</bitWidth>
         </field>
         <field>
           <name>ACCMOD</name>
@@ -23863,6 +24108,11 @@
           <name>ECCEN</name>
           <bitOffset>6</bitOffset>
           <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>7</bitOffset>
+          <bitWidth>2</bitWidth>
         </field>
         <field>
           <name>TCLR</name>
@@ -24020,6 +24270,11 @@
           <bitWidth>1</bitWidth>
         </field>
         <field>
+          <name>s</name>
+          <bitOffset>7</bitOffset>
+          <bitWidth>2</bitWidth>
+        </field>
+        <field>
           <name>TCLR</name>
           <bitOffset>9</bitOffset>
           <bitWidth>4</bitWidth>
@@ -24173,6 +24428,11 @@
           <name>ECCEN</name>
           <bitOffset>6</bitOffset>
           <bitWidth>1</bitWidth>
+        </field>
+        <field>
+          <name>s</name>
+          <bitOffset>7</bitOffset>
+          <bitWidth>2</bitWidth>
         </field>
         <field>
           <name>TCLR</name>

@@ -5420,7 +5420,7 @@
       </fields>
     </peripheral>
     <peripheral>
-      <name>RTC</name>
+      <name>BKP</name>
       <baseAddress>0x40002800</baseAddress>
       <register>
         <name>TR</name>
@@ -6681,7 +6681,7 @@
       </fields>
     </peripheral>
     <peripheral>
-      <name>BKP</name>
+      <name>RTC</name>
       <baseAddress>0x40002800</baseAddress>
       <register>
         <name>TR</name>
@@ -54546,7 +54546,7 @@
         </field>
       </fields>
       <register>
-        <name>HS_DIEPEACHMSK1</name>
+        <name>DIEPEACHMSK1</name>
         <addressOffset>0x844</addressOffset>
         <size>0x20</size>
       </register>
@@ -54598,7 +54598,7 @@
         </field>
       </fields>
       <register>
-        <name>HS_DOEPEACHMSK1</name>
+        <name>DOEPEACHMSK1</name>
         <addressOffset>0x884</addressOffset>
         <size>0x20</size>
       </register>
@@ -58906,120 +58906,6 @@
         <field>
           <name>OEP1INTM</name>
           <bitOffset>17</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>HS_DIEPEACHMSK1</name>
-        <addressOffset>0x844</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>XFRCM</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>EPDM</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>AHBERRM</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>TOM</name>
-          <bitOffset>3</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>ITTXFEMSK</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>s</name>
-          <bitOffset>5</bitOffset>
-          <bitWidth>27</bitWidth>
-        </field>
-        <field>
-          <name>INEPNEM</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>TXFURM</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>NAKM</name>
-          <bitOffset>13</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-      </fields>
-      <register>
-        <name>HS_DOEPEACHMSK1</name>
-        <addressOffset>0x884</addressOffset>
-        <size>0x20</size>
-      </register>
-      <fields>
-        <field>
-          <name>XFRCM</name>
-          <bitOffset>0</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>EPDM</name>
-          <bitOffset>1</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>AHBERRM</name>
-          <bitOffset>2</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>STUPM</name>
-          <bitOffset>3</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>OTEPDM</name>
-          <bitOffset>4</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>s</name>
-          <bitOffset>5</bitOffset>
-          <bitWidth>27</bitWidth>
-        </field>
-        <field>
-          <name>B2BSTUPM</name>
-          <bitOffset>6</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>OUTPKTERRM</name>
-          <bitOffset>8</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>BERRM</name>
-          <bitOffset>12</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>NAKMSK</name>
-          <bitOffset>13</bitOffset>
-          <bitWidth>1</bitWidth>
-        </field>
-        <field>
-          <name>NYETMSK</name>
-          <bitOffset>14</bitOffset>
           <bitWidth>1</bitWidth>
         </field>
       </fields>

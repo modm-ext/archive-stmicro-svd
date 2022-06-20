@@ -17040,6 +17040,106 @@
       </register>
     </peripheral>
     <peripheral>
+      <name>OPAMP</name>
+      <baseAddress>0x40009000</baseAddress>
+      <register>
+        <name>CSR</name>
+        <addressOffset>0x0</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>OPAMPxEN</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>FORCEVP</name>
+            <bitOffset>1</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>VPSEL</name>
+            <bitOffset>2</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>VMSEL</name>
+            <bitOffset>5</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>OPAHSM</name>
+            <bitOffset>8</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CALON</name>
+            <bitOffset>11</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CALSEL</name>
+            <bitOffset>12</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>PGGAIN</name>
+            <bitOffset>14</bitOffset>
+            <bitWidth>4</bitWidth>
+          </field>
+          <field>
+            <name>USERTRIM</name>
+            <bitOffset>18</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>TSTREF</name>
+            <bitOffset>29</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CALOUT</name>
+            <bitOffset>30</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>OTR</name>
+        <addressOffset>0x4</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>TRIMOFFSETN</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+          <field>
+            <name>TRIMOFFSETP</name>
+            <bitOffset>8</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>HSOTR</name>
+        <addressOffset>0x8</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>TRIMHSOFFSETN</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+          <field>
+            <name>TRIMHSOFFSETP</name>
+            <bitOffset>8</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+        </fields>
+      </register>
+    </peripheral>
+    <peripheral>
       <name>OPAMP1</name>
       <baseAddress>0x40009000</baseAddress>
       <register>
@@ -31236,6 +31336,117 @@
       <name>DFSDM1</name>
       <baseAddress>0x40017800</baseAddress>
       <register>
+        <name>CHCFGR10</name>
+        <addressOffset>0x0</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>SITP</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>SPICKSEL</name>
+            <bitOffset>2</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>SCDEN</name>
+            <bitOffset>5</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CKABEN</name>
+            <bitOffset>6</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CHEN</name>
+            <bitOffset>7</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CHINSEL</name>
+            <bitOffset>8</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>DATMPX</name>
+            <bitOffset>12</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>DATPACK</name>
+            <bitOffset>14</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>CKOUTDIV</name>
+            <bitOffset>16</bitOffset>
+            <bitWidth>8</bitWidth>
+          </field>
+          <field>
+            <name>CKOUTSRC</name>
+            <bitOffset>30</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>DFSDMEN</name>
+            <bitOffset>31</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHCFGR20</name>
+        <addressOffset>0x4</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>DTRBS</name>
+            <bitOffset>3</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+          <field>
+            <name>OFFSET</name>
+            <bitOffset>8</bitOffset>
+            <bitWidth>24</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHAWSCDR0</name>
+        <addressOffset>0xc</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>SCDT</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>8</bitWidth>
+          </field>
+          <field>
+            <name>BKSCD</name>
+            <bitOffset>12</bitOffset>
+            <bitWidth>4</bitWidth>
+          </field>
+          <field>
+            <name>AWFOSR</name>
+            <bitOffset>16</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+          <field>
+            <name>AWFORD</name>
+            <bitOffset>22</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHWDATAR0</name>
+        <addressOffset>0x18</addressOffset>
+        <size>0x20</size>
+      </register>
+      <register>
         <name>CHCFGR11</name>
         <addressOffset>0x20</addressOffset>
         <size>0x20</size>
@@ -31394,6 +31605,23 @@
         </fields>
       </register>
       <register>
+        <name>CHDATINR0</name>
+        <addressOffset>0x28</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>INDAT0</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>16</bitWidth>
+          </field>
+          <field>
+            <name>INDAT1</name>
+            <bitOffset>16</bitOffset>
+            <bitWidth>16</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
         <name>CHAWSCDR1</name>
         <addressOffset>0x2c</addressOffset>
         <size>0x20</size>
@@ -31456,6 +31684,18 @@
         <name>CHWDATAR1</name>
         <addressOffset>0x38</addressOffset>
         <size>0x20</size>
+      </register>
+      <register>
+        <name>CHDLYR0</name>
+        <addressOffset>0x3c</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>PLSSKP</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>6</bitWidth>
+          </field>
+        </fields>
       </register>
       <register>
         <name>CHCFGR12</name>
@@ -33615,6 +33855,146 @@
           </field>
         </fields>
       </register>
+      <register>
+        <name>CHCFGR10</name>
+        <addressOffset>0x17fef400</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>SITP</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>SPICKSEL</name>
+            <bitOffset>2</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>SCDEN</name>
+            <bitOffset>5</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CKABEN</name>
+            <bitOffset>6</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CHEN</name>
+            <bitOffset>7</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CHINSEL</name>
+            <bitOffset>8</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>DATMPX</name>
+            <bitOffset>12</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>DATPACK</name>
+            <bitOffset>14</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>CKOUTDIV</name>
+            <bitOffset>16</bitOffset>
+            <bitWidth>8</bitWidth>
+          </field>
+          <field>
+            <name>CKOUTSRC</name>
+            <bitOffset>30</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>DFSDMEN</name>
+            <bitOffset>31</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHCFGR20</name>
+        <addressOffset>0x17fef404</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>DTRBS</name>
+            <bitOffset>3</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+          <field>
+            <name>OFFSET</name>
+            <bitOffset>8</bitOffset>
+            <bitWidth>24</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHAWSCDR0</name>
+        <addressOffset>0x17fef40c</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>SCDT</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>8</bitWidth>
+          </field>
+          <field>
+            <name>BKSCD</name>
+            <bitOffset>12</bitOffset>
+            <bitWidth>4</bitWidth>
+          </field>
+          <field>
+            <name>AWFOSR</name>
+            <bitOffset>16</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+          <field>
+            <name>AWFORD</name>
+            <bitOffset>22</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHWDATAR0</name>
+        <addressOffset>0x17fef418</addressOffset>
+        <size>0x20</size>
+      </register>
+      <register>
+        <name>CHDATINR0</name>
+        <addressOffset>0x17fef428</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>INDAT0</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>16</bitWidth>
+          </field>
+          <field>
+            <name>INDAT1</name>
+            <bitOffset>16</bitOffset>
+            <bitWidth>16</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHDLYR0</name>
+        <addressOffset>0x17fef43c</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>PLSSKP</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>6</bitWidth>
+          </field>
+        </fields>
+      </register>
     </peripheral>
     <peripheral>
       <name>DMA1</name>
@@ -35443,6 +35823,16 @@
     <peripheral>
       <name>DMAMUX1</name>
       <baseAddress>0x40020800</baseAddress>
+      <register>
+        <name>CCR0</name>
+        <addressOffset>0x0</addressOffset>
+        <size>0x20</size>
+      </register>
+      <register>
+        <name>CCR0</name>
+        <addressOffset>0x0</addressOffset>
+        <size>0x20</size>
+      </register>
       <register>
         <name>CCR1</name>
         <addressOffset>0x4</addressOffset>
@@ -79080,6 +79470,15 @@
       </register>
     </peripheral>
     <peripheral>
+      <name>COMP12_COMMON</name>
+      <baseAddress>0x58003810</baseAddress>
+      <register>
+        <name>CFGR</name>
+        <addressOffset>0x0</addressOffset>
+        <size>0x20</size>
+      </register>
+    </peripheral>
+    <peripheral>
       <name>VREFBUF</name>
       <baseAddress>0x58003c00</baseAddress>
       <register>
@@ -80828,6 +81227,117 @@
       <name>DFSDM2</name>
       <baseAddress>0x58006c00</baseAddress>
       <register>
+        <name>CHCFGR10</name>
+        <addressOffset>0x0</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>SITP</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>SPICKSEL</name>
+            <bitOffset>2</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>SCDEN</name>
+            <bitOffset>5</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CKABEN</name>
+            <bitOffset>6</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CHEN</name>
+            <bitOffset>7</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CHINSEL</name>
+            <bitOffset>8</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>DATMPX</name>
+            <bitOffset>12</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>DATPACK</name>
+            <bitOffset>14</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>CKOUTDIV</name>
+            <bitOffset>16</bitOffset>
+            <bitWidth>8</bitWidth>
+          </field>
+          <field>
+            <name>CKOUTSRC</name>
+            <bitOffset>30</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>DFSDMEN</name>
+            <bitOffset>31</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHCFGR20</name>
+        <addressOffset>0x4</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>DTRBS</name>
+            <bitOffset>3</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+          <field>
+            <name>OFFSET</name>
+            <bitOffset>8</bitOffset>
+            <bitWidth>24</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHAWSCDR0</name>
+        <addressOffset>0xc</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>SCDT</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>8</bitWidth>
+          </field>
+          <field>
+            <name>BKSCD</name>
+            <bitOffset>12</bitOffset>
+            <bitWidth>4</bitWidth>
+          </field>
+          <field>
+            <name>AWFOSR</name>
+            <bitOffset>16</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+          <field>
+            <name>AWFORD</name>
+            <bitOffset>22</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHWDATAR0</name>
+        <addressOffset>0x18</addressOffset>
+        <size>0x20</size>
+      </register>
+      <register>
         <name>CHCFGR11</name>
         <addressOffset>0x20</addressOffset>
         <size>0x20</size>
@@ -80986,6 +81496,23 @@
         </fields>
       </register>
       <register>
+        <name>CHDATINR0</name>
+        <addressOffset>0x28</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>INDAT0</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>16</bitWidth>
+          </field>
+          <field>
+            <name>INDAT1</name>
+            <bitOffset>16</bitOffset>
+            <bitWidth>16</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
         <name>CHAWSCDR1</name>
         <addressOffset>0x2c</addressOffset>
         <size>0x20</size>
@@ -81048,6 +81575,18 @@
         <name>CHWDATAR1</name>
         <addressOffset>0x38</addressOffset>
         <size>0x20</size>
+      </register>
+      <register>
+        <name>CHDLYR0</name>
+        <addressOffset>0x3c</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>PLSSKP</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>6</bitWidth>
+          </field>
+        </fields>
       </register>
       <register>
         <name>CHCFGR12</name>
@@ -83198,6 +83737,146 @@
       <register>
         <name>CHDLYR7</name>
         <addressOffset>0x4bc</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>PLSSKP</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>6</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHCFGR10</name>
+        <addressOffset>0x17fef400</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>SITP</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>SPICKSEL</name>
+            <bitOffset>2</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>SCDEN</name>
+            <bitOffset>5</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CKABEN</name>
+            <bitOffset>6</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CHEN</name>
+            <bitOffset>7</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>CHINSEL</name>
+            <bitOffset>8</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>DATMPX</name>
+            <bitOffset>12</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>DATPACK</name>
+            <bitOffset>14</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+          <field>
+            <name>CKOUTDIV</name>
+            <bitOffset>16</bitOffset>
+            <bitWidth>8</bitWidth>
+          </field>
+          <field>
+            <name>CKOUTSRC</name>
+            <bitOffset>30</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+          <field>
+            <name>DFSDMEN</name>
+            <bitOffset>31</bitOffset>
+            <bitWidth>1</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHCFGR20</name>
+        <addressOffset>0x17fef404</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>DTRBS</name>
+            <bitOffset>3</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+          <field>
+            <name>OFFSET</name>
+            <bitOffset>8</bitOffset>
+            <bitWidth>24</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHAWSCDR0</name>
+        <addressOffset>0x17fef40c</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>SCDT</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>8</bitWidth>
+          </field>
+          <field>
+            <name>BKSCD</name>
+            <bitOffset>12</bitOffset>
+            <bitWidth>4</bitWidth>
+          </field>
+          <field>
+            <name>AWFOSR</name>
+            <bitOffset>16</bitOffset>
+            <bitWidth>5</bitWidth>
+          </field>
+          <field>
+            <name>AWFORD</name>
+            <bitOffset>22</bitOffset>
+            <bitWidth>2</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHWDATAR0</name>
+        <addressOffset>0x17fef418</addressOffset>
+        <size>0x20</size>
+      </register>
+      <register>
+        <name>CHDATINR0</name>
+        <addressOffset>0x17fef428</addressOffset>
+        <size>0x20</size>
+        <fields>
+          <field>
+            <name>INDAT0</name>
+            <bitOffset>0</bitOffset>
+            <bitWidth>16</bitWidth>
+          </field>
+          <field>
+            <name>INDAT1</name>
+            <bitOffset>16</bitOffset>
+            <bitWidth>16</bitWidth>
+          </field>
+        </fields>
+      </register>
+      <register>
+        <name>CHDLYR0</name>
+        <addressOffset>0x17fef43c</addressOffset>
         <size>0x20</size>
         <fields>
           <field>
@@ -98599,6 +99278,16 @@
     <peripheral>
       <name>DMAMUX2</name>
       <baseAddress>0x58025800</baseAddress>
+      <register>
+        <name>CCR0</name>
+        <addressOffset>0x0</addressOffset>
+        <size>0x20</size>
+      </register>
+      <register>
+        <name>CCR0</name>
+        <addressOffset>0x0</addressOffset>
+        <size>0x20</size>
+      </register>
       <register>
         <name>CCR1</name>
         <addressOffset>0x4</addressOffset>

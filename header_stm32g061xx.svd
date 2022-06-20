@@ -10805,6 +10805,20 @@
       </register>
     </peripheral>
     <peripheral>
+      <name>COMP12_COMMON</name>
+      <baseAddress>0x40010200</baseAddress>
+      <register>
+        <name>CSR_ODD</name>
+        <addressOffset>0x0</addressOffset>
+        <size>0x20</size>
+      </register>
+      <register>
+        <name>CSR_EVEN</name>
+        <addressOffset>0x4</addressOffset>
+        <size>0x20</size>
+      </register>
+    </peripheral>
+    <peripheral>
       <name>COMP2</name>
       <baseAddress>0x40010204</baseAddress>
       <register>
@@ -17460,6 +17474,11 @@
     <peripheral>
       <name>DMAMUX1</name>
       <baseAddress>0x40020800</baseAddress>
+      <register>
+        <name>CCR0</name>
+        <addressOffset>0x0</addressOffset>
+        <size>0x20</size>
+      </register>
       <register>
         <name>CCR1</name>
         <addressOffset>0x4</addressOffset>

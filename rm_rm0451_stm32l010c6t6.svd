@@ -716,7 +716,7 @@
       </fields>
     </peripheral>
     <peripheral>
-      <name>RTC</name>
+      <name>BKP</name>
       <baseAddress>0x40002800</baseAddress>
       <register>
         <name>TR</name>
@@ -1643,7 +1643,7 @@
       </fields>
     </peripheral>
     <peripheral>
-      <name>BKP</name>
+      <name>RTC</name>
       <baseAddress>0x40002800</baseAddress>
       <register>
         <name>TR</name>
@@ -6848,6 +6848,11 @@
           <bitWidth>1</bitWidth>
         </field>
       </fields>
+      <register>
+        <name>SR</name>
+        <addressOffset>0x8</addressOffset>
+        <size>0x20</size>
+      </register>
       <register>
         <name>DR</name>
         <addressOffset>0xc</addressOffset>
