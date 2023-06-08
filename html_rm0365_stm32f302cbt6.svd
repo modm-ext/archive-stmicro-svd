@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <device schemaVersion="1.1">
-  <name>STM32F303CBT6</name>
+  <name>STM32F302CBT6</name>
   <version>1.0</version>
-  <description>STM32F303CBT6,STM32F303CBT7,STM32F303CCT6,STM32F303CCT7,STM32F303RBT6,STM32F303RBT7,STM32F303RCT6,STM32F303RCT7,STM32F303VBT6,STM32F303VBT7,STM32F303VCT6,STM32F303VCT7,STM32F303VCY6,STM32F303VCY7,STM32F358CCT6,STM32F358RCT6,STM32F358VCT6</description>
+  <description>STM32F302CBT6,STM32F302CBT7,STM32F302CCT6,STM32F302CCT7,STM32F302RBT6,STM32F302RBT7,STM32F302RCT6,STM32F302RCT7,STM32F302VBT6,STM32F302VCT6,STM32F302VCT7,STM32F302VCY6,STM32F302VCY7</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <size>0x20</size>
@@ -59,7 +59,7 @@
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>UIFREMAP</name>
+              <name>UIFREMA</name>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -192,11 +192,6 @@
             <field>
               <name>CC4DE</name>
               <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMDE</name>
-              <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -725,7 +720,7 @@
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>UIFREMAP</name>
+              <name>UIFREMA</name>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -858,11 +853,6 @@
             <field>
               <name>CC4DE</name>
               <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMDE</name>
-              <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -1391,7 +1381,7 @@
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>UIFREMAP</name>
+              <name>UIFREMA</name>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -1524,11 +1514,6 @@
             <field>
               <name>CC4DE</name>
               <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMDE</name>
-              <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -2042,144 +2027,7 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>UIFREMAP</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CR2</name>
-          <addressOffset>0x4</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>MMS</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DIER</name>
-          <addressOffset>0xc</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>UIE</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>UDE</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SR</name>
-          <addressOffset>0x10</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>UIF</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>EGR</name>
-          <addressOffset>0x14</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>UG</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CNT</name>
-          <addressOffset>0x24</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CNT</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
-              <name>UIFCPY</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>PSC</name>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>PSC</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ARR</name>
-          <addressOffset>0x2c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>ARR</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
-      <name>TIM7</name>
-      <baseAddress>0x40001400</baseAddress>
-      <registers>
-        <register>
-          <name>CR1</name>
-          <addressOffset>0x0</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CEN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>UDIS</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>URS</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OPM</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ARPE</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>UIFREMAP</name>
+              <name>UIFREMA</name>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -3022,6 +2870,23 @@
           </fields>
         </register>
         <register>
+          <name>OR</name>
+          <addressOffset>0x4c</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>TSINSEL</name>
+              <bitOffset>1</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>RTC_ALARM_TYPE</name>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
           <name>BKP0R</name>
           <addressOffset>0x50</addressOffset>
           <size>0x20</size>
@@ -3348,664 +3213,6 @@
               <name>WIN</name>
               <bitOffset>0</bitOffset>
               <bitWidth>12</bitWidth>
-            </field>
-          </fields>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
-      <name>SPI2</name>
-      <baseAddress>0x40003800</baseAddress>
-      <registers>
-        <register>
-          <name>CR1</name>
-          <addressOffset>0x0</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CPHA</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CPOL</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>MSTR</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SPE</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>LSBFIRST</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>SSI</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>SSM</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>RXONLY</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CRCL</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CRCNEXT</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CRCEN</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BIDIOE</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BIDIMODE</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CR2</name>
-          <addressOffset>0x4</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>RXDMAEN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TXDMAEN</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>SSOE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>NSSP</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>FRF</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ERRIE</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>RXNEIE</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TXEIE</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DS</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>FRXTH</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>LDMA_RX</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>LDMA_TX</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SR</name>
-          <addressOffset>0x8</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>RXNE</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TXE</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CHSIDE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>UDR</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CRCERR</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>MODF</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OVR</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BSY</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>FRE</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>FRLVL</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>FTLVL</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DR</name>
-          <addressOffset>0xc</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DR</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CRCPR</name>
-          <addressOffset>0x10</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CRCPOLY</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RXCRCR</name>
-          <addressOffset>0x14</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>RxCRC</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>TXCRCR</name>
-          <addressOffset>0x18</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>TxCRC</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>I2SCFGR</name>
-          <addressOffset>0x1c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CHLEN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DATLEN</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>CKPOL</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>I2SSTD</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PCMSYNC</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>I2SCFG</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>I2SE</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>I2SMOD</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>I2SPR</name>
-          <addressOffset>0x20</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>I2SDIV</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>ODD</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>MCKOE</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
-      <name>SPI3</name>
-      <baseAddress>0x40003c00</baseAddress>
-      <registers>
-        <register>
-          <name>CR1</name>
-          <addressOffset>0x0</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CPHA</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CPOL</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>MSTR</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SPE</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>LSBFIRST</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>SSI</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>SSM</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>RXONLY</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CRCL</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CRCNEXT</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CRCEN</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BIDIOE</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BIDIMODE</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CR2</name>
-          <addressOffset>0x4</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>RXDMAEN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TXDMAEN</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>SSOE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>NSSP</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>FRF</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ERRIE</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>RXNEIE</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TXEIE</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DS</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>FRXTH</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>LDMA_RX</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>LDMA_TX</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SR</name>
-          <addressOffset>0x8</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>RXNE</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TXE</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CHSIDE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>UDR</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CRCERR</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>MODF</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OVR</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BSY</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>FRE</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>FRLVL</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>FTLVL</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DR</name>
-          <addressOffset>0xc</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DR</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CRCPR</name>
-          <addressOffset>0x10</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CRCPOLY</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RXCRCR</name>
-          <addressOffset>0x14</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>RxCRC</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>TXCRCR</name>
-          <addressOffset>0x18</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>TxCRC</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>I2SCFGR</name>
-          <addressOffset>0x1c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CHLEN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DATLEN</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>CKPOL</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>I2SSTD</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PCMSYNC</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>I2SCFG</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>I2SE</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>I2SMOD</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>I2SPR</name>
-          <addressOffset>0x20</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>I2SDIV</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>ODD</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>MCKOE</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -8005,7 +7212,7 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>LPMODE</name>
+              <name>LP_MODE</name>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -8224,7 +7431,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>USBSRAM512</name>
+      <name>USBSRAM</name>
       <baseAddress>0x40006000</baseAddress>
       <registers>
         <register>
@@ -8699,7 +7906,7 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>LPMODE</name>
+              <name>LP_MODE</name>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -10663,11 +9870,6 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>VREFINTRDYF</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>EWUP1</name>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
@@ -10735,46 +9937,6 @@
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-            <field>
-              <name>EN2</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BOFF2</name>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TEN2</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TSEL2</name>
-              <bitOffset>19</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>WAVE2</name>
-              <bitOffset>22</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>MAMP2</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>DMAEN2</name>
-              <bitOffset>28</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DMAUDRIE2</name>
-              <bitOffset>29</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
           </fields>
         </register>
         <register>
@@ -10785,11 +9947,6 @@
             <field>
               <name>SWTRIG1</name>
               <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>SWTRIG2</name>
-              <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -10831,111 +9988,12 @@
           </fields>
         </register>
         <register>
-          <name>DHR12R2</name>
-          <addressOffset>0x14</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DACC2DHR</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DHR12L2</name>
-          <addressOffset>0x18</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DACC2DHR</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DHR8R2</name>
-          <addressOffset>0x1c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DACC2DHR</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DHR12RD</name>
-          <addressOffset>0x20</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DACC1DHR</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>DACC2DHR</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DHR12LD</name>
-          <addressOffset>0x24</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DACC1DHR</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>DACC2DHR</name>
-              <bitOffset>20</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DHR8RD</name>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DACC1DHR</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>DACC2DHR</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>DOR1</name>
           <addressOffset>0x2c</addressOffset>
           <size>0x20</size>
           <fields>
             <field>
               <name>DACC1DOR</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DOR2</name>
-          <addressOffset>0x30</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DACC2DOR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>12</bitWidth>
             </field>
@@ -10951,9 +10009,233 @@
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>COMP</name>
+      <baseAddress>0x40010000</baseAddress>
+      <registers>
+        <register>
+          <name>COMP1_CSR</name>
+          <addressOffset>0x1c</addressOffset>
+          <size>0x20</size>
+          <fields>
             <field>
-              <name>DMAUDR2</name>
-              <bitOffset>29</bitOffset>
+              <name>COMP1EN</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP1_INP_DAC</name>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP1MODE</name>
+              <bitOffset>2</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>COMP1INSEL</name>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+            </field>
+            <field>
+              <name>COMP1OUTSEL</name>
+              <bitOffset>10</bitOffset>
+              <bitWidth>4</bitWidth>
+            </field>
+            <field>
+              <name>COMP1POL</name>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP1HYST</name>
+              <bitOffset>16</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>COMPx_BLANKING</name>
+              <bitOffset>18</bitOffset>
+              <bitWidth>3</bitWidth>
+            </field>
+            <field>
+              <name>COMP1OUT</name>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP1LOCK</name>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>COMP2_CSR</name>
+          <addressOffset>0x20</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>COMP2EN</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP2_INP_DAC</name>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP2MODE</name>
+              <bitOffset>2</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>COMP2INMSEL</name>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+            </field>
+            <field>
+              <name>COMP2INSEL</name>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP2WINMODE</name>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP2OUTSEL</name>
+              <bitOffset>10</bitOffset>
+              <bitWidth>4</bitWidth>
+            </field>
+            <field>
+              <name>COMP2POL</name>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP2_BLANKING</name>
+              <bitOffset>18</bitOffset>
+              <bitWidth>3</bitWidth>
+            </field>
+            <field>
+              <name>COMP2OUT</name>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP2LOCK</name>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>COMP4_CSR</name>
+          <addressOffset>0x28</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>COMP4EN</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP4MODE</name>
+              <bitOffset>2</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>COMP4INMSEL</name>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+            </field>
+            <field>
+              <name>COMP4INSEL</name>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP4OUTSEL</name>
+              <bitOffset>10</bitOffset>
+              <bitWidth>4</bitWidth>
+            </field>
+            <field>
+              <name>COMP4POL</name>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP4_BLANKING</name>
+              <bitOffset>18</bitOffset>
+              <bitWidth>3</bitWidth>
+            </field>
+            <field>
+              <name>COMP4OUT</name>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP4LOCK</name>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>COMP6_CSR</name>
+          <addressOffset>0x30</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>COMP6EN</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP6MODE</name>
+              <bitOffset>2</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>COMP6INMSEL</name>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+            </field>
+            <field>
+              <name>COMP6INSEL</name>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP6OUTSEL</name>
+              <bitOffset>10</bitOffset>
+              <bitWidth>4</bitWidth>
+            </field>
+            <field>
+              <name>COMP6POL</name>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP6_BLANKING</name>
+              <bitOffset>18</bitOffset>
+              <bitWidth>3</bitWidth>
+            </field>
+            <field>
+              <name>COMP6OUT</name>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>COMP6LOCK</name>
+              <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -11010,16 +10292,6 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>TIM7_DAC2_DMA_RMP</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DAC2_CH1_DMA_RMP</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>I2CPB6FMP</name>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
@@ -11055,21 +10327,14 @@
               <bitWidth>2</bitWidth>
             </field>
             <field>
+              <name>I2C3_FMP</name>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
               <name>FPU_IE</name>
               <bitOffset>26</bitOffset>
               <bitWidth>6</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RCR</name>
-          <addressOffset>0x4</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>PAGE_WP</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>15</bitWidth>
             </field>
           </fields>
         </register>
@@ -11210,115 +10475,6 @@
               <name>SRAM_PEF</name>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CFGR4</name>
-          <addressOffset>0x48</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>ADC12_EXT2_RMP</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC12_EXT3_RMP</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC12_EXT5_RMP</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC12_EXT13_RMP</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC12_EXT15_RMP</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC12_JEXT3_RMP</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC12_JEXT6_RMP</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC12_JEXT13_RMP</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC34_EXT5_RMP</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC34_EXT6_RMP</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC34_EXT15_RMP</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC34_JEXT5_RMP</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC34_JEXT11_RMP</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC34_JEXT14_RMP</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CFGR3</name>
-          <addressOffset>0x50</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>SPI1_RX_DMA_RMP</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>SPI1_TX_DMA_RMP</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>I2C1_RX_DMA_RMP</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>I2C1_TX_DMA_RMP</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>ADC2_DMA_RMP</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
             </field>
           </fields>
         </register>
@@ -11502,590 +10658,6 @@
             </field>
           </fields>
         </register>
-        <register>
-          <name>OPAMP3_CSR</name>
-          <addressOffset>0x40</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>OPAMP3EN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>FORCE_VP</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>VP_SEL</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>VM_SEL</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>TCM_EN</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>VMS_SEL</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>VPS_SEL</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>CALON</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CALSEL</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PGA_GAIN</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>USER_TRIM</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TRIMOFFSETP</name>
-              <bitOffset>19</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>TRIMOFFSETN</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>TSTREF</name>
-              <bitOffset>29</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OUTCAL</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>OPAMP4_CSR</name>
-          <addressOffset>0x44</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>OPAMP4EN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>FORCE_VP</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>VP_SEL</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>VM_SEL</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>TCM_EN</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>VMS_SEL</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>VPS_SEL</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>CALON</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CALSEL</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PGA_GAIN</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>USER_TRIM</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TRIMOFFSETP</name>
-              <bitOffset>19</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>TRIMOFFSETN</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>TSTREF</name>
-              <bitOffset>29</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OUTCAL</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
-      <name>COMP</name>
-      <baseAddress>0x40010000</baseAddress>
-      <registers>
-        <register>
-          <name>COMP1_CSR</name>
-          <addressOffset>0x1c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>COMP1EN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP1_INP_DAC</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP1MODE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>COMP1INSEL</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>COMP1OUTSEL</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>COMP1POL</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP1HYST</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>COMPx_BLANKING</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>COMP1OUT</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP1LOCK</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>COMP2_CSR</name>
-          <addressOffset>0x20</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>COMP2EN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP2_INP_DAC</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP2MODE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>COMP2INMSEL</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>19</bitWidth>
-            </field>
-            <field>
-              <name>COMP2INSEL</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP2WINMODE</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP2OUTSEL</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>COMP2POL</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP2_BLANKING</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>COMP2OUT</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP2LOCK</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>COMP3_CSR</name>
-          <addressOffset>0x24</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>COMP3EN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP3MODE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>COMP3INMSEL</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>COMP3INSEL</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP3OUTSEL</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>COMP3POL</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP3HYST</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>COMP3_BLANKING</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>COMP3OUT</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP3LOCK</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>COMP4_CSR</name>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>COMP4EN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP4MODE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>COMP4INMSEL</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>19</bitWidth>
-            </field>
-            <field>
-              <name>COMP4INSEL</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP4WINMODE</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP4OUTSEL</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>COMP4POL</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP4_BLANKING</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>COMP4OUT</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP4LOCK</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>COMP5_CSR</name>
-          <addressOffset>0x2c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>COMP5EN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP5MODE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>COMP5INMSEL</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>COMP5INSEL</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP5OUTSEL</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>COMP5POL</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP5HYST</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>COMP5_BLANKING</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>COMP5OUT</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP5LOCK</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>COMP6_CSR</name>
-          <addressOffset>0x30</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>COMP6EN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP6MODE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>COMP6INMSEL</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>19</bitWidth>
-            </field>
-            <field>
-              <name>COMP6INSEL</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP6WINMODE</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP6OUTSEL</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>COMP6POL</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP6_BLANKING</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>COMP6OUT</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP6LOCK</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>COMP7_CSR</name>
-          <addressOffset>0x34</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>COMP7EN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP7MODE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>COMP7INMSEL</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>COMP7INSEL</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP7OUTSEL</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>COMP7POL</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP7HYST</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>COMP7_BLANKING</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>COMP7OUT</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMP7LOCK</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -12100,7 +10672,12 @@
             <field>
               <name>MR</name>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>29</bitWidth>
+            </field>
+            <field>
+              <name>MR30</name>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -12112,7 +10689,12 @@
             <field>
               <name>MR</name>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>29</bitWidth>
+            </field>
+            <field>
+              <name>MR30</name>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -12124,7 +10706,12 @@
             <field>
               <name>TR</name>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>23</bitWidth>
+            </field>
+            <field>
+              <name>TR30</name>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -12136,7 +10723,12 @@
             <field>
               <name>TR</name>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>23</bitWidth>
+            </field>
+            <field>
+              <name>TR30</name>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -12148,7 +10740,12 @@
             <field>
               <name>SWIER</name>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>23</bitWidth>
+            </field>
+            <field>
+              <name>SWIER30</name>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -12160,7 +10757,12 @@
             <field>
               <name>PR</name>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>23</bitWidth>
+            </field>
+            <field>
+              <name>PR30</name>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -12172,11 +10774,6 @@
             <field>
               <name>MR32</name>
               <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>MR33</name>
-              <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -12202,11 +10799,6 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>MR33</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>MR34</name>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -12228,11 +10820,6 @@
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-            <field>
-              <name>TR33</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
           </fields>
         </register>
         <register>
@@ -12243,11 +10830,6 @@
             <field>
               <name>TR32</name>
               <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TR33</name>
-              <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -12262,11 +10844,6 @@
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-            <field>
-              <name>SWIER33</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
           </fields>
         </register>
         <register>
@@ -12277,11 +10854,6 @@
             <field>
               <name>PR32</name>
               <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>PR33</name>
-              <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -12338,7 +10910,7 @@
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>UIFREMAP</name>
+              <name>UIFREMA</name>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -12668,7 +11240,7 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>COM</name>
+              <name>COMG</name>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -12686,6 +11258,43 @@
               <name>B2G</name>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>CCMR1_Input</name>
+          <addressOffset>0x18</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>CC1S</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>IC1PSC</name>
+              <bitOffset>2</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>IC1F</name>
+              <bitOffset>4</bitOffset>
+              <bitWidth>4</bitWidth>
+            </field>
+            <field>
+              <name>CC2S</name>
+              <bitOffset>8</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>IC2PSC</name>
+              <bitOffset>10</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>IC2F</name>
+              <bitOffset>12</bitOffset>
+              <bitWidth>4</bitWidth>
             </field>
           </fields>
         </register>
@@ -12747,37 +11356,37 @@
           </fields>
         </register>
         <register>
-          <name>CCMR1_Input</name>
-          <addressOffset>0x18</addressOffset>
+          <name>CCMR2_Input</name>
+          <addressOffset>0x1c</addressOffset>
           <size>0x20</size>
           <fields>
             <field>
-              <name>CC1S</name>
+              <name>CC3S</name>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>IC1PSC</name>
+              <name>IC3PSC</name>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>IC1F</name>
+              <name>IC3F</name>
               <bitOffset>4</bitOffset>
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>CC2S</name>
+              <name>CC4S</name>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>IC2PSC</name>
+              <name>IC4PSC</name>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>IC2F</name>
+              <name>IC4F</name>
               <bitOffset>12</bitOffset>
               <bitWidth>4</bitWidth>
             </field>
@@ -12837,43 +11446,6 @@
               <name>OC4CE</name>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCMR2_Input</name>
-          <addressOffset>0x1c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CC3S</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>IC3PSC</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>IC3F</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>CC4S</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>IC4PSC</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>IC4F</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>4</bitWidth>
             </field>
           </fields>
         </register>
@@ -12950,6 +11522,11 @@
             <field>
               <name>CC4P</name>
               <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CC4NP</name>
+              <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -13177,13 +11754,8 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>TIM1_ETR_ADC1_RMPTIM8_ETR_ADC2_RMPTIM20_ETR_ADC3_RMP</name>
+              <name>TIM1_ETR_ADC1_RMP</name>
               <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>TIM1_ETR_ADC4_RMPTIM8_ETR_ADC3_RMPTIM20_ETR_ADC4_RMP</name>
-              <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
             </field>
           </fields>
@@ -13516,7 +12088,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>RxCRC</name>
+              <name>RXCRC</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -13528,7 +12100,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>TxCRC</name>
+              <name>TXCRC</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -13600,994 +12172,6 @@
               <name>MCKOE</name>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
-      <name>TIM8</name>
-      <baseAddress>0x40013400</baseAddress>
-      <registers>
-        <register>
-          <name>CR1</name>
-          <addressOffset>0x0</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CEN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>UDIS</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>URS</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OPM</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DIR</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CMS</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>ARPE</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CKD</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>UIFREMAP</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CR2</name>
-          <addressOffset>0x4</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CCPC</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CCUS</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CCDS</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>MMS</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>TI1S</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OIS1</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OIS1N</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OIS2</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OIS2N</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OIS3</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OIS3N</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OIS4</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OIS5</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OIS6</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>MMS2</name>
-              <bitOffset>20</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SMCR</name>
-          <addressOffset>0x8</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>SMS</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>17</bitWidth>
-            </field>
-            <field>
-              <name>OCCS</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TS</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>MSM</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ETF</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>ETPS</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>ECE</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ETP</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DIER</name>
-          <addressOffset>0xc</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>UIE</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC1IE</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC2IE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC3IE</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC4IE</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMIE</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TIE</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BIE</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>UDE</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC1DE</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC2DE</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC3DE</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC4DE</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMDE</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TDE</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SR</name>
-          <addressOffset>0x10</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>UIF</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC1IF</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC2IF</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC3IF</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC4IF</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMIF</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TIF</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BIF</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>B2IF</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC1OF</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC2OF</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC3OF</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC4OF</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC5IF</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC6IF</name>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>EGR</name>
-          <addressOffset>0x14</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>UG</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC1G</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC2G</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC3G</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC4G</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COM</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TG</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BG</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>B2G</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCMR1_Output</name>
-          <addressOffset>0x18</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CC1S</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>OC1FE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC1PE</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC1M</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>13</bitWidth>
-            </field>
-            <field>
-              <name>OC1CE</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC2S</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>OC2FE</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC2PE</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC2M</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>13</bitWidth>
-            </field>
-            <field>
-              <name>OC2CE</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCMR1_Input</name>
-          <addressOffset>0x18</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CC1S</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>IC1PSC</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>IC1F</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>CC2S</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>IC2PSC</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>IC2F</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCMR2_Output</name>
-          <addressOffset>0x1c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CC3S</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>OC3FE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC3PE</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC3M</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>13</bitWidth>
-            </field>
-            <field>
-              <name>OC3CE</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC4S</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>OC4FE</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC4PE</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC4M</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>13</bitWidth>
-            </field>
-            <field>
-              <name>OC4CE</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCMR2_Input</name>
-          <addressOffset>0x1c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CC3S</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>IC3PSC</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>IC3F</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>CC4S</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>IC4PSC</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>IC4F</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCER</name>
-          <addressOffset>0x20</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CC1E</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC1P</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC1NE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC1NP</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC2E</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC2P</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC2NE</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC2NP</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC3E</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC3P</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC3NE</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC3NP</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC4E</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC4P</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC5E</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC5P</name>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC6E</name>
-              <bitOffset>20</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC6P</name>
-              <bitOffset>21</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CNT</name>
-          <addressOffset>0x24</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CNT</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
-              <name>UIFCPY</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>PSC</name>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>PSC</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ARR</name>
-          <addressOffset>0x2c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>ARR</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RCR</name>
-          <addressOffset>0x30</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>REP</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCR1</name>
-          <addressOffset>0x34</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CCR1</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCR2</name>
-          <addressOffset>0x38</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CCR2</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCR3</name>
-          <addressOffset>0x3c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CCR3</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCR4</name>
-          <addressOffset>0x40</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CCR4</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BDTR</name>
-          <addressOffset>0x44</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DT</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>OSSI</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OSSR</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BKE</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BKP</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AOE</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>MOE</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BKF</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>BK2F</name>
-              <bitOffset>20</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>BK2E</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BK2P</name>
-              <bitOffset>25</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCR</name>
-          <addressOffset>0x48</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DBA</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>DBL</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DMAR</name>
-          <addressOffset>0x4c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DMAB</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>OR</name>
-          <addressOffset>0x50</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>TIM1_ETR_ADC1_RMPTIM8_ETR_ADC2_RMPTIM20_ETR_ADC3_RMP</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>TIM1_ETR_ADC4_RMPTIM8_ETR_ADC3_RMPTIM20_ETR_ADC4_RMP</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCMR3_Output</name>
-          <addressOffset>0x54</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>OC5FE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC5PE</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC5M</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>13</bitWidth>
-            </field>
-            <field>
-              <name>OC5CE</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC6FE</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC6PE</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC6M</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>13</bitWidth>
-            </field>
-            <field>
-              <name>OC6CE</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCR5</name>
-          <addressOffset>0x58</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CCR5</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
-              <name>GC5C1</name>
-              <bitOffset>29</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>GC5C2</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>GC5C3</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCR6</name>
-          <addressOffset>0x5c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CCR6</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
             </field>
           </fields>
         </register>
@@ -15281,7 +12865,7 @@
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>UIFREMAP</name>
+              <name>UIFREMA</name>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -15528,7 +13112,7 @@
               <bitWidth>13</bitWidth>
             </field>
             <field>
-              <name>OC1CE</name>
+              <name>OC!CE</name>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -15551,6 +13135,11 @@
               <name>OC2M</name>
               <bitOffset>12</bitOffset>
               <bitWidth>13</bitWidth>
+            </field>
+            <field>
+              <name>OC2CE</name>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -15716,7 +13305,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>DT</name>
+              <name>DTG</name>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
             </field>
@@ -15828,7 +13417,7 @@
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>UIFREMAP</name>
+              <name>UIFREMA</name>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -15899,11 +13488,6 @@
             <field>
               <name>CC1DE</name>
               <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMDE</name>
-              <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -16119,7 +13703,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>DT</name>
+              <name>DTG</name>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
             </field>
@@ -16243,7 +13827,7 @@
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>UIFREMAP</name>
+              <name>UIFREMA</name>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -16314,11 +13898,6 @@
             <field>
               <name>CC1DE</name>
               <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COMDE</name>
-              <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -16534,7 +14113,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>DT</name>
+              <name>DTG</name>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
             </field>
@@ -16977,7 +14556,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -17080,7 +14659,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -17183,7 +14762,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -17286,7 +14865,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -17389,7 +14968,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -17492,7 +15071,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -17595,7 +15174,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -17998,7 +15577,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -18101,7 +15680,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -18204,7 +15783,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -18307,7 +15886,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -18410,7 +15989,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -18513,7 +16092,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -18616,7 +16195,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>NDT</name>
+              <name>NDTR</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -18683,7 +16262,7 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>HSERDY</name>
+              <name>HSERD</name>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -18899,11 +16478,6 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>TIM8RST</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>USART1RST</name>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
@@ -18948,11 +16522,6 @@
             <field>
               <name>TIM6RST</name>
               <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TIM7RST</name>
-              <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -19008,11 +16577,6 @@
             <field>
               <name>CANRST</name>
               <bitOffset>25</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DAC2RST</name>
-              <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -19117,11 +16681,6 @@
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-            <field>
-              <name>ADC34EN</name>
-              <bitOffset>29</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
           </fields>
         </register>
         <register>
@@ -19142,11 +16701,6 @@
             <field>
               <name>SPI1EN</name>
               <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TIM8EN</name>
-              <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -19174,11 +16728,6 @@
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-            <field>
-              <name>TIM20EN</name>
-              <bitOffset>20</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
           </fields>
         </register>
         <register>
@@ -19204,11 +16753,6 @@
             <field>
               <name>TIM6EN</name>
               <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TIM7EN</name>
-              <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -19264,11 +16808,6 @@
             <field>
               <name>CANEN</name>
               <bitOffset>25</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DAC2EN</name>
-              <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -19443,18 +16982,8 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>TSCRST</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>ADC12RST</name>
               <bitOffset>28</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADC34RST</name>
-              <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -19472,11 +17001,6 @@
             <field>
               <name>ADC12PRES</name>
               <bitOffset>4</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>ADC34PRES</name>
-              <bitOffset>9</bitOffset>
               <bitWidth>5</bitWidth>
             </field>
           </fields>
@@ -19512,13 +17036,18 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>TIM8SW</name>
-              <bitOffset>9</bitOffset>
+              <name>TIM15SW</name>
+              <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>TIM20SW</name>
-              <bitOffset>15</bitOffset>
+              <name>TIM16SW</name>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TIM17SW</name>
+              <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -19855,7 +17384,7 @@
           <size>0x20</size>
           <fields>
             <field>
-              <name>Polynomialcoefficients</name>
+              <name>POL</name>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -21717,93 +19246,6 @@
             </field>
           </fields>
         </register>
-        <register>
-          <name>BRR</name>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>BR0</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR1</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR2</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR3</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR4</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR5</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR6</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR7</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR8</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR9</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR10</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR11</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR12</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR13</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR14</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR15</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -22685,93 +20127,6 @@
             </field>
           </fields>
         </register>
-        <register>
-          <name>BRR</name>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>BR0</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR1</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR2</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR3</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR4</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR5</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR6</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR7</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR8</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR9</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR10</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR11</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR12</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR13</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR14</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR15</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -23034,93 +20389,6 @@
             </field>
             <field>
               <name>OSPEEDR15</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>PUPDR</name>
-          <addressOffset>0xc</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>PUPDR0</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR1</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR2</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR3</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR4</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR5</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR6</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR7</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR8</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR9</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR10</name>
-              <bitOffset>20</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR11</name>
-              <bitOffset>22</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR12</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR13</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR14</name>
-              <bitOffset>28</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR15</name>
               <bitOffset>30</bitOffset>
               <bitWidth>2</bitWidth>
             </field>
@@ -23650,93 +20918,6 @@
               <name>AFRHAFR15</name>
               <bitOffset>28</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BRR</name>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>BR0</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR1</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR2</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR3</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR4</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR5</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR6</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR7</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR8</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR9</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR10</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR11</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR12</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR13</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR14</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR15</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -24008,93 +21189,6 @@
           </fields>
         </register>
         <register>
-          <name>PUPDR</name>
-          <addressOffset>0xc</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>PUPDR0</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR1</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR2</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR3</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR4</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR5</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR6</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR7</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR8</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR9</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR10</name>
-              <bitOffset>20</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR11</name>
-              <bitOffset>22</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR12</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR13</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR14</name>
-              <bitOffset>28</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR15</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>IDR</name>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -24618,93 +21712,6 @@
               <name>AFRHAFR15</name>
               <bitOffset>28</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BRR</name>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>BR0</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR1</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR2</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR3</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR4</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR5</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR6</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR7</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR8</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR9</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR10</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR11</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR12</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR13</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR14</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR15</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -24976,93 +21983,6 @@
           </fields>
         </register>
         <register>
-          <name>PUPDR</name>
-          <addressOffset>0xc</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>PUPDR0</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR1</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR2</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR3</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR4</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR5</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR6</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR7</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR8</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR9</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR10</name>
-              <bitOffset>20</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR11</name>
-              <bitOffset>22</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR12</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR13</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR14</name>
-              <bitOffset>28</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR15</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>IDR</name>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -25586,93 +22506,6 @@
               <name>AFRHAFR15</name>
               <bitOffset>28</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BRR</name>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>BR0</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR1</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR2</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR3</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR4</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR5</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR6</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR7</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR8</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR9</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR10</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR11</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR12</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR13</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR14</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR15</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -25944,93 +22777,6 @@
           </fields>
         </register>
         <register>
-          <name>PUPDR</name>
-          <addressOffset>0xc</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>PUPDR0</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR1</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR2</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR3</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR4</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR5</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR6</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR7</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR8</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR9</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR10</name>
-              <bitOffset>20</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR11</name>
-              <bitOffset>22</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR12</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR13</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR14</name>
-              <bitOffset>28</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>PUPDR15</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>IDR</name>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -26554,93 +23300,6 @@
               <name>AFRHAFR15</name>
               <bitOffset>28</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BRR</name>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>BR0</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR1</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR2</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR3</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR4</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR5</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR6</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR7</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR8</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR9</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR10</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR11</name>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR12</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR13</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR14</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>BR15</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -27439,1586 +24098,6 @@
     <peripheral>
       <name>ADC2</name>
       <baseAddress>0x50000100</baseAddress>
-      <registers>
-        <register>
-          <name>ISR</name>
-          <addressOffset>0x0</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>ADRDY</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EOSMP</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EOC</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EOS</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OVR</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JEOC</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JEOS</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD1</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD2</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD3</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JQOVF</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>IER</name>
-          <addressOffset>0x4</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>ADRDYIE</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EOSMPIE</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EOCIE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EOSIE</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OVRIE</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JEOCIE</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JEOSIE</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD1IE</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD2IE</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD3IE</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JQOVFIE</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CR</name>
-          <addressOffset>0x8</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>ADEN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADDIS</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADSTART</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JADSTART</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADSTP</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JADSTP</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADVREGEN</name>
-              <bitOffset>28</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>ADCALDIF</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADCAL</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CFGR</name>
-          <addressOffset>0xc</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DMAEN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DMACFG</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>RES</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>ALIGN</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EXTSEL</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>EXTEN</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>OVRMOD</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CONT</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AUTDLY</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DISCEN</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DISCNUM</name>
-              <bitOffset>17</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>JDISCEN</name>
-              <bitOffset>20</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JQM</name>
-              <bitOffset>21</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD1SGL</name>
-              <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD1EN</name>
-              <bitOffset>23</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JAWD1EN</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JAUTO</name>
-              <bitOffset>25</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD1CH</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SMPR1</name>
-          <addressOffset>0x14</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>SMP1</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP2</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP3</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP4</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP5</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP6</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP7</name>
-              <bitOffset>21</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP8</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP9</name>
-              <bitOffset>27</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SMPR2</name>
-          <addressOffset>0x18</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>SMP10</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP11</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP12</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP13</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP14</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP15</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP16</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP17</name>
-              <bitOffset>21</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP18</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>TR1</name>
-          <addressOffset>0x20</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>LT1</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>HT1</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>TR2</name>
-          <addressOffset>0x24</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>LT2</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>HT2</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>TR3</name>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>LT3</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>HT3</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SQR1</name>
-          <addressOffset>0x30</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>L</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>SQ1</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ2</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ3</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ4</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SQR2</name>
-          <addressOffset>0x34</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>SQ5</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ6</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ7</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ8</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ9</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SQR3</name>
-          <addressOffset>0x38</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>SQ10</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ11</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ12</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ13</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ14</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SQR4</name>
-          <addressOffset>0x3c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>SQ15</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ16</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DR</name>
-          <addressOffset>0x40</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>RDATA</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>JSQR</name>
-          <addressOffset>0x4c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>JL</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>JEXTSEL</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>JEXTEN</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>JSQ1</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>JSQ2</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>JSQ3</name>
-              <bitOffset>20</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>JSQ4</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>OFR1</name>
-          <addressOffset>0x60</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>OFFSET1</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET1_CH</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET1_EN</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>OFR2</name>
-          <addressOffset>0x64</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>OFFSET2</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET2_CH</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET2_EN</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>OFR3</name>
-          <addressOffset>0x68</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>OFFSET3</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET3_CH</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET3_EN</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>OFR4</name>
-          <addressOffset>0x6c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>OFFSET4</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET4_CH</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET4_EN</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>JDR1</name>
-          <addressOffset>0x80</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>JDATA1</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>JDR2</name>
-          <addressOffset>0x84</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>JDATA2</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>JDR3</name>
-          <addressOffset>0x88</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>JDATA3</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>JDR4</name>
-          <addressOffset>0x8c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>JDATA4</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>AWD2CR</name>
-          <addressOffset>0xa0</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>AWD2CH</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>18</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>AWD3CR</name>
-          <addressOffset>0xa4</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>AWD3CH</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>18</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DIFSEL</name>
-          <addressOffset>0xb0</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DIFSEL</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>18</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CALFACT</name>
-          <addressOffset>0xb4</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CALFACT_S</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>7</bitWidth>
-            </field>
-            <field>
-              <name>CALFACT_D</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>7</bitWidth>
-            </field>
-          </fields>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
-      <name>ADC3</name>
-      <baseAddress>0x50000400</baseAddress>
-      <registers>
-        <register>
-          <name>ISR</name>
-          <addressOffset>0x0</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>ADRDY</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EOSMP</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EOC</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EOS</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OVR</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JEOC</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JEOS</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD1</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD2</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD3</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JQOVF</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>IER</name>
-          <addressOffset>0x4</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>ADRDYIE</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EOSMPIE</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EOCIE</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EOSIE</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OVRIE</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JEOCIE</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JEOSIE</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD1IE</name>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD2IE</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD3IE</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JQOVFIE</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CR</name>
-          <addressOffset>0x8</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>ADEN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADDIS</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADSTART</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JADSTART</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADSTP</name>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JADSTP</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADVREGEN</name>
-              <bitOffset>28</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>ADCALDIF</name>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ADCAL</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CFGR</name>
-          <addressOffset>0xc</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DMAEN</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DMACFG</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>RES</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>ALIGN</name>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>EXTSEL</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>EXTEN</name>
-              <bitOffset>10</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>OVRMOD</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CONT</name>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AUTDLY</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DISCEN</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DISCNUM</name>
-              <bitOffset>17</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>JDISCEN</name>
-              <bitOffset>20</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JQM</name>
-              <bitOffset>21</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD1SGL</name>
-              <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD1EN</name>
-              <bitOffset>23</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JAWD1EN</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>JAUTO</name>
-              <bitOffset>25</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>AWD1CH</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SMPR1</name>
-          <addressOffset>0x14</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>SMP1</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP2</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP3</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP4</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP5</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP6</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP7</name>
-              <bitOffset>21</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP8</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP9</name>
-              <bitOffset>27</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SMPR2</name>
-          <addressOffset>0x18</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>SMP10</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP11</name>
-              <bitOffset>3</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP12</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP13</name>
-              <bitOffset>9</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP14</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP15</name>
-              <bitOffset>15</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP16</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP17</name>
-              <bitOffset>21</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SMP18</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>TR1</name>
-          <addressOffset>0x20</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>LT1</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>HT1</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>TR2</name>
-          <addressOffset>0x24</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>LT2</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>HT2</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>TR3</name>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>LT3</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>HT3</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SQR1</name>
-          <addressOffset>0x30</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>L</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>SQ1</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ2</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ3</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ4</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SQR2</name>
-          <addressOffset>0x34</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>SQ5</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ6</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ7</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ8</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ9</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SQR3</name>
-          <addressOffset>0x38</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>SQ10</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ11</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ12</name>
-              <bitOffset>12</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ13</name>
-              <bitOffset>18</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ14</name>
-              <bitOffset>24</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SQR4</name>
-          <addressOffset>0x3c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>SQ15</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>SQ16</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DR</name>
-          <addressOffset>0x40</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>RDATA</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>JSQR</name>
-          <addressOffset>0x4c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>JL</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>JEXTSEL</name>
-              <bitOffset>2</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>JEXTEN</name>
-              <bitOffset>6</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>JSQ1</name>
-              <bitOffset>8</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>JSQ2</name>
-              <bitOffset>14</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>JSQ3</name>
-              <bitOffset>20</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>JSQ4</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>OFR1</name>
-          <addressOffset>0x60</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>OFFSET1</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET1_CH</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET1_EN</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>OFR2</name>
-          <addressOffset>0x64</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>OFFSET2</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET2_CH</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET2_EN</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>OFR3</name>
-          <addressOffset>0x68</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>OFFSET3</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET3_CH</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET3_EN</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>OFR4</name>
-          <addressOffset>0x6c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>OFFSET4</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET4_CH</name>
-              <bitOffset>26</bitOffset>
-              <bitWidth>5</bitWidth>
-            </field>
-            <field>
-              <name>OFFSET4_EN</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>JDR1</name>
-          <addressOffset>0x80</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>JDATA1</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>JDR2</name>
-          <addressOffset>0x84</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>JDATA2</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>JDR3</name>
-          <addressOffset>0x88</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>JDATA3</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>JDR4</name>
-          <addressOffset>0x8c</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>JDATA4</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>AWD2CR</name>
-          <addressOffset>0xa0</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>AWD2CH</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>18</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>AWD3CR</name>
-          <addressOffset>0xa4</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>AWD3CH</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>18</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DIFSEL</name>
-          <addressOffset>0xb0</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>DIFSEL</name>
-              <bitOffset>1</bitOffset>
-              <bitWidth>18</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CALFACT</name>
-          <addressOffset>0xb4</addressOffset>
-          <size>0x20</size>
-          <fields>
-            <field>
-              <name>CALFACT_S</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>7</bitWidth>
-            </field>
-            <field>
-              <name>CALFACT_D</name>
-              <bitOffset>16</bitOffset>
-              <bitWidth>7</bitWidth>
-            </field>
-          </fields>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
-      <name>ADC4</name>
-      <baseAddress>0x50000500</baseAddress>
       <registers>
         <register>
           <name>ISR</name>

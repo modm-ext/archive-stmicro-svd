@@ -1386,7 +1386,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>TAMP</name>
+      <name>RTC</name>
       <baseAddress>0x40002800</baseAddress>
       <registers>
         <register>
@@ -2355,7 +2355,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>RTC</name>
+      <name>TAMP</name>
       <baseAddress>0x40002800</baseAddress>
       <registers>
         <register>

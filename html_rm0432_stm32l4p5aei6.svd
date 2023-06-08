@@ -62885,7 +62885,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>RAM</name>
+      <name>PKA</name>
       <baseAddress>0x5005e000</baseAddress>
       <registers>
         <register>
@@ -62977,7 +62977,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>PKA</name>
+      <name>RAM</name>
       <baseAddress>0x5005e000</baseAddress>
       <registers>
         <register>

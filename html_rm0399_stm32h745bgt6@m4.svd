@@ -80655,7 +80655,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>COMP2</name>
+      <name>COMP1</name>
       <baseAddress>0x58003800</baseAddress>
       <registers>
         <register>
@@ -80951,7 +80951,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>COMP1</name>
+      <name>COMP2</name>
       <baseAddress>0x58003800</baseAddress>
       <registers>
         <register>
@@ -81292,7 +81292,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>BKP</name>
+      <name>RTC</name>
       <baseAddress>0x58004000</baseAddress>
       <registers>
         <register>
@@ -82470,7 +82470,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>RTC</name>
+      <name>BKP</name>
       <baseAddress>0x58004000</baseAddress>
       <registers>
         <register>
